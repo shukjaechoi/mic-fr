@@ -14,6 +14,7 @@
     <section class="hero">
       <div class="eyebrow">LISTEN FIRST. MEASURE CAREFULLY.</div>
       <p>비슷한 위치에서 녹음한 7개 음원을 시간·음량 기준으로 맞췄습니다. 아래 곡선은 측정된 절대 FR이 아니라, 실제 녹음에서 드러난 <strong>상대적 음색 차이</strong>입니다.</p>
+      <a class="setup-link" href="#setup-title">녹음 현장 사진 보기 ↓</a>
       <div class="hero-stats"><div><b>07</b><span>녹음</span></div><div><b id="duration">—</b><span>공통 비교 구간</span></div><div><b id="target">—</b><span>목표 LUFS</span></div></div>
     </section>
 
@@ -42,7 +43,7 @@
     <section class="panel readings" aria-labelledby="readings-title"><div class="section-title"><div><span class="index">03 / READOUT</span><h2 id="readings-title">마이크별 인상</h2></div><p>중역 대비 변화량 · 단위 dB</p></div><div class="table-scroll"><table><thead><tr><th>마이크</th><th>저역<br><small>80–250 Hz</small></th><th>저중역<br><small>250–500 Hz</small></th><th>존재감<br><small>2–5 kHz</small></th><th>고역<br><small>8–16 kHz</small></th><th>원본 LUFS</th><th>싱크 이동</th><th>싱크 변화폭</th></tr></thead><tbody id="readings"></tbody></table></div><p class="hint">↕ 표시는 기준 음원과 극성이 반대여서 청취 파일에서 반전한 경우입니다. 싱크 변화폭은 4개 구간의 xcorr 시간차 범위이며, 큰 값은 일정한 오프셋만으로 정렬하기 어렵다는 뜻입니다.</p></section>
 
     <section class="method"><div><span class="index">04 / METHOD</span><h2>이 그래프가 말하는 것,<br><em>말하지 않는 것.</em></h2></div><div class="method-copy"><p>시간 정렬은 <strong>상호상관(xcorr)</strong>으로 큰 시간차를 찾고 파형으로 샘플 단위까지 보정했습니다. 공통으로 겹치는 구간만 사용했고, ITU-R BS.1770 방식의 게이팅을 적용한 통합 LUFS로 음량을 맞췄습니다.</p><p>스펙트럼은 같은 구간의 STFT 파워 중앙값을 비교했습니다. 그래프는 기준 녹음 대비 비율이므로 <strong>마이크 자체의 공인 FR 곡선이 아닙니다.</strong> 위치의 미세한 차이, 지향각, 방 반사, 프리앰프, 내장 DSP, 자체 잡음이 모두 포함됩니다. 특히 스마트폰·레코더의 처리와 고역 잡음은 큰 차이를 만들 수 있습니다.</p><p>추가로 볼 만한 것은 자음 명료도를 좌우하는 2–5 kHz, 저역의 근접 효과, 초고역의 잡음/에어감, 무음 구간의 노이즈 플로어, 구간별 음색 일관성입니다. 절대 FR을 얻으려면 같은 위치의 교정 스피커·로그 스윕·기준 마이크가 필요합니다.</p></div></section>
-    <section class="setup" aria-labelledby="setup-title"><div class="setup-heading"><span class="index">05 / RECORDING SETUP</span><h2 id="setup-title">녹음 현장</h2><p>마이크를 가까이 모아 배치한 당시 모습입니다. 각 캡슐의 거리와 지향각이 완전히 같지는 않으므로, 앞의 곡선에는 배치 차이도 반영됩니다.</p></div><figure><img src="./assets/recording-setup.jpg" alt="여러 마이크와 휴대용 레코더를 가까이 배치한 녹음 현장" width="1600" height="1200" loading="lazy"><figcaption>이번 비교 음원 녹음 배치 · 사용자 제공 사진</figcaption></figure></section>
+    <section class="setup" aria-labelledby="setup-title"><div class="setup-heading"><span class="index">05 / RECORDING SETUP</span><h2 id="setup-title">녹음 현장</h2><p>마이크를 가까이 모아 배치한 당시 모습입니다. 각 캡슐의 거리와 지향각이 완전히 같지는 않으므로, 앞의 곡선에는 배치 차이도 반영됩니다.</p></div><figure><img src="./assets/recording-setup.jpg" alt="여러 마이크와 휴대용 레코더를 가까이 배치한 녹음 현장" width="1600" height="1200" loading="eager"><figcaption>이번 비교 음원 녹음 배치 · 사용자 제공 사진</figcaption></figure></section>
   </main>
   <footer>MIC / FIELD NOTES <span>Relative listening study · 48 kHz · mono comparison exports</span></footer>
   <script src="./app.js" defer></script>
