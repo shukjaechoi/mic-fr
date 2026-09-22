@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0c1118">
   <title>7 Microphones, One Room — 상대 음색 비교</title>
   <meta name="description" content="동일한 소리를 녹음한 7개 마이크의 LUFS·시간 정렬 비교, 상대 스펙트럼, A/B 청취 실험.">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=20260922-waveform-fix">
 </head>
 <body>
   <header class="topbar"><div class="brand"><span class="brand-dot"></span>MIC / FIELD NOTES</div><span class="edition">7 RECORDINGS · ONE SOURCE</span></header>
@@ -21,7 +21,7 @@
     <section class="panel listen" aria-labelledby="listen-title">
       <div class="section-title"><div><span class="index">01 / LISTEN</span><h2 id="listen-title">7트랙 Solo 비교</h2></div><p>한 번에 한 트랙만 재생합니다. Solo를 바꾸면 같은 시점에서 이어집니다.</p></div>
       <div class="waveform-heading"><strong>전체 음원 파형</strong><span>클릭: 재생 위치 이동 · 드래그: 반복 구간 선택</span></div>
-      <div id="waveform" class="waveform" role="group" aria-label="전체 음원 파형에서 재생 위치 또는 반복 구간 선택"><canvas id="waveform-canvas" aria-hidden="true"></canvas><span id="waveform-region" class="waveform-region"></span><span id="waveform-playhead" class="waveform-playhead"></span></div>
+      <div id="waveform" class="waveform" role="group" aria-label="전체 음원 파형에서 재생 위치 또는 반복 구간 선택" style="height:104px"><canvas id="waveform-canvas" width="1200" height="104" aria-hidden="true"></canvas><span id="waveform-region" class="waveform-region"></span><span id="waveform-playhead" class="waveform-playhead"></span></div>
       <div class="waveform-times"><span>0:00</span><span id="waveform-total">—</span></div>
       <div class="transport"><button id="play" class="play" aria-label="재생">▶</button><div class="scrub"><div class="time-row"><span id="current">0:00</span><span id="total">0:00</span></div><input id="seek" type="range" min="0" max="1000" value="0" aria-label="전체 재생 위치"></div><label class="volume">볼륨<input id="volume" type="range" min="0" max="100" value="75" aria-label="볼륨"></label></div>
       <p id="audio-status" class="audio-status" role="status">재생 준비 중…</p>
@@ -46,6 +46,6 @@
     <section class="setup" aria-labelledby="setup-title"><div class="setup-heading"><span class="index">05 / RECORDING SETUP</span><h2 id="setup-title">녹음 현장</h2><p>마이크를 가까이 모아 배치한 당시 모습입니다. 각 캡슐의 거리와 지향각이 완전히 같지는 않으므로, 앞의 곡선에는 배치 차이도 반영됩니다.</p></div><figure><img src="./assets/recording-setup.jpg" alt="여러 마이크와 휴대용 레코더를 가까이 배치한 녹음 현장" width="1600" height="1200" loading="eager"><figcaption>이번 비교 음원 녹음 배치 · 사용자 제공 사진</figcaption></figure></section>
   </main>
   <footer>MIC / FIELD NOTES <span>Relative listening study · 48 kHz · mono comparison exports</span></footer>
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=20260922-waveform-fix" defer></script>
 </body>
 </html>
