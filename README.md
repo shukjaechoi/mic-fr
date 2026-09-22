@@ -28,6 +28,8 @@ The listening panel shows seven tracks with mutually exclusive Solo buttons. It 
 
 Solo switching uses a short 18 ms audio crossfade to reduce clicks. The spectrum view defaults to 70 Hz–4 kHz and can be expanded to the full 40 Hz–18 kHz. Hovering or focusing a microphone legend highlights its curve and shows a coverage-weighted fill underneath. Coverage combines active-vs-quiet spectral contrast, occurrence across active frames, and relative energy; it is a heuristic guide to which frequencies this recording excites, not a calibrated FR confidence interval.
 
+The listening panel shows an overview waveform derived from the aligned KM184 comparison track. Click it to seek, or drag across it to set the loop region; the existing start/end sliders remain available for fine adjustment.
+
 The bottom of the page includes a downscaled JPEG of the user-provided recording setup photo at `docs/assets/recording-setup.jpg`. It is public when the site is published.
 
 ## Interpretation
