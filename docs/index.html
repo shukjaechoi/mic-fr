@@ -30,10 +30,11 @@
 
     <section class="panel graph-section" aria-labelledby="graph-title">
       <div class="section-title"><div><span class="index">02 / COMPARE</span><h2 id="graph-title">상대 스펙트럼</h2></div><p><strong>KM184 기준</strong> · 500–2,000 Hz 중앙값을 0 dB로 정렬</p></div>
-      <div class="chart-controls"><label>기준 마이크 <select id="reference"></select></label><button id="select-all" type="button">전체 선택</button><button id="clear" type="button">선택 해제</button></div>
+      <div class="chart-controls"><label>기준 마이크 <select id="reference"></select></label><label class="focus-band-toggle"><input id="focus-band" type="checkbox" checked> 70 Hz–4 kHz만 보기</label><button id="select-all" type="button">전체 선택</button><button id="clear" type="button">선택 해제</button></div>
       <div class="chart-wrap"><canvas id="chart" role="img" aria-label="주파수별 상대 레벨 그래프"></canvas></div>
+      <div class="coverage-key"><span class="coverage-ramp" aria-hidden="true"></span><span>옅음 · 신호 적음</span><span>진함 · 신호 풍부</span><strong id="coverage-readout"></strong></div>
       <div id="legend" class="legend"></div>
-      <p class="chart-note">40 Hz–18 kHz, 1/6 옥타브 폭의 중앙값으로 평활화. ±dB는 절대 감도가 아닌 주파수별 상대 차이입니다. 음원에 적은 에너지가 있거나 잡음이 지배적인 극저·초고역은 해석에 주의하세요.</p>
+      <p class="chart-note">레전드의 마이크 이름에 마우스를 올리거나 키보드로 포커스하면 해당 곡선 아래가 채워집니다. 채움의 진하기는 그 녹음에서 해당 주파수의 신호가 조용한 구간보다 얼마나 뚜렷하고 자주 나타났는지 보여주는 <strong>상대적 정보량</strong>입니다. 전체 보기는 40 Hz–18 kHz, 집중 보기는 70 Hz–4 kHz입니다. 1/6 옥타브 평활화. 절대 FR의 통계적 신뢰구간이나 마이크 자체의 성능 점수는 아닙니다.</p>
     </section>
 
     <section class="panel readings" aria-labelledby="readings-title"><div class="section-title"><div><span class="index">03 / READOUT</span><h2 id="readings-title">마이크별 인상</h2></div><p>중역 대비 변화량 · 단위 dB</p></div><div class="table-scroll"><table><thead><tr><th>마이크</th><th>저역<br><small>80–250 Hz</small></th><th>저중역<br><small>250–500 Hz</small></th><th>존재감<br><small>2–5 kHz</small></th><th>고역<br><small>8–16 kHz</small></th><th>원본 LUFS</th><th>싱크 이동</th><th>싱크 변화폭</th></tr></thead><tbody id="readings"></tbody></table></div><p class="hint">↕ 표시는 기준 음원과 극성이 반대여서 청취 파일에서 반전한 경우입니다. 싱크 변화폭은 4개 구간의 xcorr 시간차 범위이며, 큰 값은 일정한 오프셋만으로 정렬하기 어렵다는 뜻입니다.</p></section>
