@@ -28,6 +28,8 @@ The listening panel shows seven tracks with mutually exclusive Solo buttons. It 
 
 Solo switching uses a short 18 ms audio crossfade to reduce clicks. The spectrum view defaults to 70 Hz–4 kHz and can be expanded to the full 40 Hz–18 kHz. Hovering or focusing a microphone legend highlights its curve and shows a coverage-weighted fill underneath. Coverage combines active-vs-quiet spectral contrast, occurrence across active frames, and relative energy; it is a heuristic guide to which frequencies this recording excites, not a calibrated FR confidence interval.
 
+The bottom of the page includes a downscaled JPEG of the user-provided recording setup photo at `docs/assets/recording-setup.jpg`. It is public when the site is published.
+
 ## Interpretation
 
 Without a calibrated sweep/reference, the recordings cannot identify absolute mic frequency response. Room reflections, distance, angle, polar pattern, preamp, DSP, self-noise, and programme content all influence the curves. The most informative relative observations are bass/proximity balance, 2–5 kHz presence, high-frequency roll-off or excess, quiet-passage noise, and whether the relative coloration is consistent over time. Treat 8–16 kHz spikes with particular caution: they can be noise rather than useful acoustic output.
