@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c1118">
   <title>7 Microphones, One Room — 상대 음색 비교</title>
-  <meta name="description" content="7개 마이크 녹음과 iPhone→KM184 EQ의 LUFS·시간 정렬 비교, 상대 스펙트럼, A/B 청취 실험.">
+  <meta name="description" content="7개 마이크 녹음과 iPhone→KM184 FIR·IIR EQ의 LUFS·시간 정렬 비교, 상대 스펙트럼, A/B 청취 실험.">
   <link rel="stylesheet" href="./style.css?v=20260922-waveform-fix">
 </head>
 <body>
@@ -19,7 +19,7 @@
     </section>
 
     <section class="panel listen" aria-labelledby="listen-title">
-      <div class="section-title"><div><span class="index">01 / LISTEN</span><h2 id="listen-title">8트랙 Solo 비교</h2></div><p>7개 원본 비교 음원과 iPhone 보정본. Solo를 바꾸면 같은 시점에서 이어집니다.</p></div>
+      <div class="section-title"><div><span class="index">01 / LISTEN</span><h2 id="listen-title">9트랙 Solo 비교</h2></div><p>7개 원본 비교 음원과 iPhone FIR·IIR 보정본. Solo를 바꾸면 같은 시점에서 이어집니다.</p></div>
       <div class="waveform-heading"><strong>전체 음원 파형</strong><span>클릭: 재생 위치 이동 · 드래그: 반복 구간 선택</span></div>
       <div id="waveform" class="waveform" role="group" aria-label="전체 음원 파형에서 재생 위치 또는 반복 구간 선택" style="height:104px"><canvas id="waveform-canvas" width="1200" height="104" aria-hidden="true"></canvas><span id="waveform-region" class="waveform-region"></span><span id="waveform-playhead" class="waveform-playhead"></span></div>
       <div class="waveform-times"><span>0:00</span><span id="waveform-total">—</span></div>
@@ -28,7 +28,7 @@
       <div class="region"><div class="region-head"><div><strong>구간 반복</strong><span id="region-summary">0:00 – 끝</span></div><label class="loop-toggle"><input id="loop" type="checkbox" checked> 끝에서 반복</label></div><div class="region-sliders"><label>시작 <input id="region-start" type="range" min="0" max="1000" value="0" aria-label="반복 구간 시작"><output id="start-value">0:00</output></label><label>끝 <input id="region-end" type="range" min="0" max="1000" value="1000" aria-label="반복 구간 끝"><output id="end-value">—</output></label></div><div class="region-actions"><button id="set-start" type="button">현재 위치 → 시작</button><button id="set-end" type="button">현재 위치 → 끝</button><button id="reset-region" type="button">전체 구간</button><button id="replay-region" type="button" class="primary-action">↺ 선택 구간 재생</button></div></div>
       <div class="track-heading"><span>TRACK / SOLO</span><span>공통 타임라인 · 클릭해서 이동</span></div>
       <div class="track-list" id="mic-buttons"></div>
-      <p class="hint">헤드폰을 권장합니다. <strong>iphone2km184는 iPhone 녹음의 추정 음색만 EQ로 보정한 파생 트랙</strong>입니다. KM184의 잡음·왜곡·지향성까지 재현한 것은 아닙니다. 페이지의 음량 보정은 지각 음량을 맞추기 위한 것이며, 장치·브라우저 볼륨은 별개입니다. <strong>em-usb는 녹음 중 시간차가 변해 같은 시점 전환이 근사치</strong>입니다.</p>
+      <p class="hint">헤드폰을 권장합니다. <strong>iphone2km184는 선형 위상 FIR, iphone2km184-IIR은 넓은 2차 필터 6개를 직렬로 적용한 보정본</strong>입니다. 둘 다 iPhone의 추정 음색만 바꾸며 KM184의 잡음·왜곡·지향성은 재현하지 못합니다. 페이지의 음량 보정은 지각 음량을 맞추기 위한 것이며, 장치·브라우저 볼륨은 별개입니다. <strong>em-usb는 녹음 중 시간차가 변해 같은 시점 전환이 근사치</strong>입니다.</p>
     </section>
 
     <section class="panel graph-section" aria-labelledby="graph-title">
@@ -40,12 +40,12 @@
       <p class="chart-note">레전드의 마이크 이름에 마우스를 올리거나 키보드로 포커스하면 해당 곡선 아래가 채워집니다. 채움의 진하기는 그 녹음에서 해당 주파수의 신호가 조용한 구간보다 얼마나 뚜렷하고 자주 나타났는지 보여주는 <strong>상대적 정보량</strong>입니다. 전체 보기는 40 Hz–18 kHz, 집중 보기는 70 Hz–4 kHz입니다. 1/6 옥타브 평활화. 절대 FR의 통계적 신뢰구간이나 마이크 자체의 성능 점수는 아닙니다.</p>
     </section>
 
-    <section class="panel readings" aria-labelledby="readings-title"><div class="section-title"><div><span class="index">03 / READOUT</span><h2 id="readings-title">마이크별 인상</h2></div><p>중역 대비 변화량 · 단위 dB</p></div><div class="table-scroll"><table><thead><tr><th>마이크</th><th>저역<br><small>80–250 Hz</small></th><th>저중역<br><small>250–500 Hz</small></th><th>존재감<br><small>2–5 kHz</small></th><th>고역<br><small>8–16 kHz</small></th><th>원본 LUFS</th><th>싱크 이동</th><th>싱크 변화폭</th></tr></thead><tbody id="readings"></tbody></table></div><p class="hint">↕ 표시는 기준 음원과 극성이 반대여서 청취 파일에서 반전한 경우입니다. iphone2km184의 원본 LUFS는 변환 전 iPhone 값입니다. 싱크 변화폭은 4개 구간의 xcorr 시간차 범위이며, 큰 값은 일정한 오프셋만으로 정렬하기 어렵다는 뜻입니다.</p></section>
+    <section class="panel readings" aria-labelledby="readings-title"><div class="section-title"><div><span class="index">03 / READOUT</span><h2 id="readings-title">마이크별 인상</h2></div><p>중역 대비 변화량 · 단위 dB</p></div><div class="table-scroll"><table><thead><tr><th>마이크</th><th>저역<br><small>80–250 Hz</small></th><th>저중역<br><small>250–500 Hz</small></th><th>존재감<br><small>2–5 kHz</small></th><th>고역<br><small>8–16 kHz</small></th><th>원본 LUFS</th><th>싱크 이동</th><th>싱크 변화폭</th></tr></thead><tbody id="readings"></tbody></table></div><p class="hint">↕ 표시는 기준 음원과 극성이 반대여서 청취 파일에서 반전한 경우입니다. iPhone 보정본의 원본 LUFS는 변환 전 iPhone 값입니다. 싱크 변화폭은 4개 구간의 xcorr 시간차 범위이며, 큰 값은 일정한 오프셋만으로 정렬하기 어렵다는 뜻입니다.</p></section>
 
-    <section class="method"><div><span class="index">04 / METHOD</span><h2>이 그래프가 말하는 것,<br><em>말하지 않는 것.</em></h2></div><div class="method-copy"><p>시간 정렬은 <strong>상호상관(xcorr)</strong>으로 큰 시간차를 찾고 파형으로 샘플 단위까지 보정했습니다. 공통으로 겹치는 구간만 사용했고, ITU-R BS.1770 방식의 게이팅을 적용한 통합 LUFS로 음량을 맞췄습니다.</p><p>스펙트럼은 같은 구간의 STFT 파워 중앙값을 비교했습니다. 그래프는 기준 녹음 대비 비율이므로 <strong>마이크 자체의 공인 FR 곡선이 아닙니다.</strong> 위치의 미세한 차이, 지향각, 방 반사, 프리앰프, 내장 DSP, 자체 잡음이 모두 포함됩니다. 특히 스마트폰·레코더의 처리와 고역 잡음은 큰 차이를 만들 수 있습니다.</p><p><strong>iphone2km184</strong>는 두 녹음의 평활화된 상대 스펙트럼을 바탕으로 만든 4,097탭 대칭 FIR(FFT 컨볼루션) 보정본입니다. 주로 70Hz–4kHz를 보정하고 바깥쪽은 평탄하게 되돌리며, 부스트/컷을 +8/−6dB로 제한했습니다. 처리 후 통합 LUFS를 다시 맞추고 결과 WAV를 재분석해 곡선을 그렸습니다. 음색의 일부만 맞춘 것이며 위상·잡음·왜곡·DSP·지향성의 차이는 남습니다.</p><p>추가로 볼 만한 것은 자음 명료도를 좌우하는 2–5 kHz, 저역의 근접 효과, 초고역의 잡음/에어감, 무음 구간의 노이즈 플로어, 구간별 음색 일관성입니다. 절대 FR을 얻으려면 같은 위치의 교정 스피커·로그 스윕·기준 마이크가 필요합니다.</p></div></section>
+    <section class="method"><div><span class="index">04 / METHOD</span><h2>이 그래프가 말하는 것,<br><em>말하지 않는 것.</em></h2></div><div class="method-copy"><p>시간 정렬은 <strong>상호상관(xcorr)</strong>으로 큰 시간차를 찾고 파형으로 샘플 단위까지 보정했습니다. 공통으로 겹치는 구간만 사용했고, ITU-R BS.1770 방식의 게이팅을 적용한 통합 LUFS로 음량을 맞췄습니다.</p><p>스펙트럼은 같은 구간의 STFT 파워 중앙값을 비교했습니다. 그래프는 기준 녹음 대비 비율이므로 <strong>마이크 자체의 공인 FR 곡선이 아닙니다.</strong> 위치의 미세한 차이, 지향각, 방 반사, 프리앰프, 내장 DSP, 자체 잡음이 모두 포함됩니다. 특히 스마트폰·레코더의 처리와 고역 잡음은 큰 차이를 만들 수 있습니다.</p><p><strong>iphone2km184</strong>는 두 녹음의 평활화된 상대 스펙트럼을 바탕으로 만든 4,097탭 대칭 FIR(FFT 컨볼루션) 보정본입니다. <strong>iphone2km184-IIR</strong>은 같은 목표를 저역 중심의 넓은 2차 피킹 EQ 6개로 근사한 최소 위상 보정본입니다. FIR의 앞쪽 울림은 피하는 대신 위상 응답은 달라집니다. 둘 다 주로 70Hz–4kHz를 보정하고 처리 후 통합 LUFS를 다시 맞췄습니다. 그래프는 각각의 결과 WAV를 재분석한 값입니다. 음색의 일부만 맞춘 것이며 잡음·왜곡·DSP·지향성의 차이는 남습니다.</p><p>추가로 볼 만한 것은 자음 명료도를 좌우하는 2–5 kHz, 저역의 근접 효과, 초고역의 잡음/에어감, 무음 구간의 노이즈 플로어, 구간별 음색 일관성입니다. 절대 FR을 얻으려면 같은 위치의 교정 스피커·로그 스윕·기준 마이크가 필요합니다.</p></div></section>
     <section class="setup" aria-labelledby="setup-title"><div class="setup-heading"><span class="index">05 / RECORDING SETUP</span><h2 id="setup-title">녹음 현장</h2><p>마이크를 가까이 모아 배치한 당시 모습입니다. 각 캡슐의 거리와 지향각이 완전히 같지는 않으므로, 앞의 곡선에는 배치 차이도 반영됩니다.</p></div><figure><img src="./assets/recording-setup.jpg" alt="여러 마이크와 휴대용 레코더를 가까이 배치한 녹음 현장" width="1600" height="1200" loading="eager"><figcaption>이번 비교 음원 녹음 배치 · 사용자 제공 사진</figcaption></figure></section>
   </main>
   <footer>MIC / FIELD NOTES <span>Relative listening study · 48 kHz · mono comparison exports</span></footer>
-  <script src="./app.js?v=20260922-iphone-eq" defer></script>
+  <script src="./app.js?v=20260922-iphone-iir" defer></script>
 </body>
 </html>

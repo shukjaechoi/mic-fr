@@ -14,19 +14,21 @@ It writes `docs/data/analysis.json` and seven aligned, LUFS-matched, 48 kHz mono
 
 Run `python3 build_iphone_eq.py` with NumPy available after `analyze.py` to add the derived `iphone2km184.wav` track and its measured curve to `analysis.json`. It uses a 4,097-tap symmetric FIR designed from the smoothed relative iPhone/KM184 spectrum, with correction focused on roughly 70 Hz–4 kHz and limited to +8/−6 dB. The output is LUFS-matched to the other comparison tracks. This is programme-dependent EQ, **not** a microphone emulation or a calibration: residual noise, distortion, DSP, phase, room and directivity differences remain.
 
+Run `python3 build_iphone_iir.py` next to add `iphone2km184-iir.wav` and its measured curve. It fits six broad peaking biquads to the same programme-dependent target, cascades them as a minimum-phase alternative, and LUFS-matches the result. The chosen frequencies, Q values and gains are saved as `eqBands` in `analysis.json`; the FIR and IIR tracks can be compared directly.
+
 The method uses BS.1770-4 K-weighting with absolute and relative gating, FFT cross-correlation for sample offsets, common-overlap trimming, a shared peak-safety gain, and median STFT power ratios smoothed on log-frequency bands. Curves are normalized to the median 500–2,000 Hz level. These are *programme-dependent relative spectral estimates*, not calibrated microphone FR.
 
 `em-usb` exhibits variable latency between different parts of the recording. Its single-offset alignment is approximate; the page shows a sync variation metric and warns listeners. `iphone` and `sonyPCMD10` are polarity-inverted relative to KM184 and are flipped in the comparison exports.
 
 ## Publish with GitHub Pages
 
-1. Create a public GitHub repository and push this project (or just `docs/` and the analysis scripts). The `docs/data/` WAV assets total about 54 MB with the derived track.
+1. Create a public GitHub repository and push this project (or just `docs/` and the analysis scripts). The `docs/data/` WAV assets total about 61 MB with both derived tracks.
 2. In the repository, open **Settings → Pages** and choose **Deploy from a branch**, your published branch, and **`/docs`** as the folder.
 3. Wait for the Pages URL shown there. Every file under `docs/` is then public, including the comparison audio. Do not publish if these recordings contain private content.
 
 The page is static: no server code, external data source, or account is required. The only optional network dependency is a Google Fonts stylesheet; system fonts are used if it is unavailable.
 
-The listening panel shows the seven microphone recordings plus the `iphone2km184` derived track with mutually exclusive Solo buttons. It decodes the eight comparison WAVs once into the browser's audio engine, so switching Solo preserves the common timeline. Set a start and end point with the two sliders or the “current position” buttons, then choose “선택 구간 재생”; the loop checkbox controls whether playback repeats at the end.
+The listening panel shows the seven microphone recordings plus the FIR `iphone2km184` and IIR `iphone2km184-IIR` derived tracks with mutually exclusive Solo buttons. It decodes the nine comparison WAVs once into the browser's audio engine, so switching Solo preserves the common timeline. Set a start and end point with the two sliders or the “current position” buttons, then choose “선택 구간 재생”; the loop checkbox controls whether playback repeats at the end.
 
 Solo switching uses a short 18 ms audio crossfade to reduce clicks. The spectrum view defaults to 70 Hz–4 kHz and can be expanded to the full 40 Hz–18 kHz. Hovering or focusing a microphone legend highlights its curve and shows a coverage-weighted fill underneath. Coverage combines active-vs-quiet spectral contrast, occurrence across active frames, and relative energy; it is a heuristic guide to which frequencies this recording excites, not a calibrated FR confidence interval.
 

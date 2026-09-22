@@ -1,4 +1,4 @@
-const colors=['#d5f36a','#ff9c72','#72d7df','#66e0a4','#a88cff','#f3c96a','#e789b5','#8db8ff'];
+const colors=['#d5f36a','#ff9c72','#72d7df','#66e0a4','#31b6a4','#a88cff','#f3c96a','#e789b5','#8db8ff'];
 const $=id=>document.getElementById(id);
 let data,active=0,reference=3,selected=new Set(),buffers=[],regionStart=0,regionEnd=0;
 let hoveredMic=null;
@@ -70,7 +70,7 @@ function draw(){
 }
 function legend(){$('legend').replaceChildren(...data.microphones.map((m,i)=>{const label=document.createElement('label');label.className='legend-item';label.tabIndex=0;label.innerHTML=`<input type="checkbox" ${selected.has(i)?'checked':''} ${i===reference?'disabled':''}><span class="swatch" style="background:${colors[i]}"></span>${m.label}${i===reference?' (기준)':''}`;label.querySelector('input').addEventListener('change',e=>{e.target.checked?selected.add(i):selected.delete(i);draw()});const enter=()=>{hoveredMic=i;label.classList.add('is-hovered');draw()},leave=()=>{hoveredMic=null;label.classList.remove('is-hovered');draw()};label.addEventListener('mouseenter',enter);label.addEventListener('mouseleave',leave);label.addEventListener('focusin',enter);label.addEventListener('focusout',leave);return label}))}
 async function init(){
-  data=await fetch('./data/analysis.json?v=iphone2km184').then(r=>r.json());regionEnd=data.durationSec;
+  data=await fetch('./data/analysis.json?v=iphone2km184-iir').then(r=>r.json());regionEnd=data.durationSec;
   $('duration').textContent=`${data.durationSec.toFixed(1)}s`;$('target').textContent=`${data.targetLufs.toFixed(1)}`;$('total').textContent=fmt(data.durationSec);$('waveform-total').textContent=fmt(data.durationSec);
   data.microphones.forEach((m,i)=>{const o=document.createElement('option');o.value=i;o.textContent=m.label;$('reference').append(o);if(m.id===data.reference)reference=i});
   active=reference;$('reference').value=reference;selected=new Set(data.microphones.map((_,i)=>i).filter(i=>i!==reference));drawTable();legend();renderTracks();updateRegion();draw();requestAnimationFrame(tick);
