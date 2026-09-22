@@ -132,6 +132,16 @@ def smooth_log(freq, values, centers):
     return out
 
 
+def write_waveform(x, bins=1200):
+    """Small RMS overview that can render before the seven WAVs download."""
+    edges = np.linspace(0, len(x), bins + 1, dtype=int)
+    envelope = []
+    for a, b in zip(edges[:-1], edges[1:]):
+        segment = x[a:b:max(1, (b - a) // 256)]
+        envelope.append(round(float(np.sqrt(np.mean(segment * segment))), 6))
+    (OUT / 'waveform.json').write_text(json.dumps(envelope))
+
+
 def main():
     raw = {name: read(name) for name in NAMES}
     ref = raw[REF]
@@ -154,6 +164,7 @@ def main():
     global_peak = max(float(np.max(np.abs(aligned[name] * gains[name]))) for name in NAMES)
     safety = min(1.0, .98 / global_peak)
     played = {name: aligned[name] * gains[name] * safety for name in NAMES}
+    write_waveform(played[REF])
     centers = np.geomspace(40, 18000, 120)
     spectra = {}
     coverages = {}

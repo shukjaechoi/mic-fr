@@ -76,8 +76,9 @@ async function init(){
   active=reference;$('reference').value=reference;selected=new Set(data.microphones.map((_,i)=>i).filter(i=>i!==reference));drawTable();legend();renderTracks();updateRegion();draw();requestAnimationFrame(tick);
   context=new (window.AudioContext||window.webkitAudioContext)();gain=context.createGain();gain.gain.value=+$('volume').value/100;gain.connect(context.destination);
   $('play').disabled=true;$('replay-region').disabled=true;$('audio-status').textContent='7개 트랙을 불러오는 중…';
+  try{const response=await fetch('./data/waveform.json');if(response.ok){waveformEnvelope=await response.json();drawWaveform()}}catch(e){console.warn('파형 데이터 로딩 실패, 음원에서 생성합니다',e)}
   buffers=await Promise.all(data.microphones.map(async m=>{const response=await fetch(encodeURI(m.audio));if(!response.ok)throw Error(`${m.label} 음원 로딩 실패`);return context.decodeAudioData(await response.arrayBuffer())}));
-  buildWaveform(buffers[reference]);
+  if(!waveformEnvelope.length)buildWaveform(buffers[reference]);
   $('play').disabled=false;$('replay-region').disabled=false;$('audio-status').textContent='준비 완료 · Solo 버튼으로 트랙을 바꾸세요';
 }
 $('waveform').addEventListener('pointerdown',e=>{if(!waveformEnvelope.length)return;e.preventDefault();$('waveform').setPointerCapture(e.pointerId);waveformDrag={start:waveformTime(e.clientX),startX:e.clientX,moved:false};});
