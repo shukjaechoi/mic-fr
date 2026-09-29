@@ -1036,7 +1036,7 @@
     },
     {
       "id": "iphone-hybrid-fir-train-only",
-      "label": "iPhone - Hybrid FIR train-only",
+      "label": "iPhone - Hybrid FIR base (train-only)",
       "derivedFrom": "iphone",
       "originalLufs": -18.83,
       "gainDb": 0.0,
