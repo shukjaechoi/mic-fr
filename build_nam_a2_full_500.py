@@ -53,10 +53,16 @@ def write_wav(path: Path, x: np.ndarray) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
+    parser.add_argument("--id", default=ID)
+    parser.add_argument("--label", default="iPhone - NAM A2 Full-500")
+    parser.add_argument("--note", default=("iPhone - NAM A2 Full-500 is the selected epoch-470 checkpoint from a 500-epoch "
+                                             "paired iPhone→KM184 run. The browser export is cropped to the mic-fr aligned iPhone "
+                                             "timeline and LUFS-matched with the other tracks. It is a same-recording experiment, "
+                                             "not a general microphone emulation claim."))
     args = parser.parse_args()
 
     payload = json.loads((DATA / "analysis.json").read_text())
-    payload["microphones"] = [m for m in payload["microphones"] if m["id"] != ID]
+    payload["microphones"] = [m for m in payload["microphones"] if m["id"] != args.id]
     iphone = next(m for m in payload["microphones"] if m["id"] == "iphone")
     page_phone = read_wav(DATA / "iphone.wav")
     raw_model = read_wav(args.input)
@@ -72,7 +78,7 @@ def main() -> None:
     # The listener switches tracks at a shared target LUFS, as it does for the
     # original microphones and the FIR/IIR derived tracks.
     model *= 10 ** ((float(payload["targetLufs"]) - lufs(model)) / 20)
-    output = DATA / f"{ID}.wav"
+    output = DATA / f"{args.id}.wav"
     write_wav(output, model)
     model = read_wav(output)  # analyze the exact browser deliverable
 
@@ -86,7 +92,7 @@ def main() -> None:
                                  ("presence", 2000, 5000), ("air", 8000, 16000)]}
     centers = np.asarray(payload["frequencies"])
     row = dict(
-        id=ID, label="iPhone - NAM A2 Full-500", derivedFrom="iphone",
+        id=args.id, label=args.label, derivedFrom="iphone",
         originalLufs=iphone["originalLufs"],
         gainDb=round(float(payload["targetLufs"]) - lufs(raw_model[start:start + len(page_phone)]), 2),
         processedLufs=round(lufs(model), 2), lagMs=iphone["lagMs"],
@@ -96,13 +102,10 @@ def main() -> None:
                                                      np.maximum(spec[(freq >= 500) & (freq < 2000)].mean(), 1e-20))), 1),
         curve=[round(v, 2) if v is not None else None for v in smooth_log(freq, ratio, centers)],
         coverage=[round(float(v), 3) for v in content_coverage(power, active, freq, centers)],
-        audio=f"data/{ID}.wav")
+        audio=f"data/{args.id}.wav")
     index = next(i for i, m in enumerate(payload["microphones"]) if m["id"] == "iphone")
     payload["microphones"].insert(index + 1, row)
-    payload["namNote"] = ("iPhone - NAM A2 Full-500 is the selected epoch-470 checkpoint from a 500-epoch "
-                          "paired iPhone→KM184 run. The browser export is cropped to the mic-fr aligned iPhone "
-                          "timeline and LUFS-matched with the other tracks. It is a same-recording experiment, "
-                          "not a general microphone emulation claim.")
+    payload["namNote"] = args.note
     (DATA / "analysis.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2))
     print(f"saved {output}; lag {lag} samples ({lag / FS * 1000:.2f} ms); bands {bands}")
 
