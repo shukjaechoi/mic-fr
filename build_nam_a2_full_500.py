@@ -23,23 +23,12 @@ ID = "iphone-nam-a2-full-500"
 
 
 def read_wav(path: Path) -> np.ndarray:
-    # NAM conversion exports IEEE float WAV; the page assets are PCM16.
-    if path.suffix.lower() == ".wav":
-        try:
-            with open(path, "rb") as f:
-                header = f.read(40)
-            if header[20:22] == b"\x03\x00":
-                return sf.read(path, always_2d=True)[0].mean(axis=1).astype(np.float64)
-        except OSError:
-            pass
-    with wave.open(str(path), "rb") as wav:
-        if wav.getframerate() != FS:
-            raise ValueError(f"Expected 48 kHz: {path}")
-        frames = np.frombuffer(wav.readframes(wav.getnframes()), "<i2" if wav.getsampwidth() == 2 else "<f4")
-        if wav.getnchannels() > 1:
-            frames = frames.reshape(-1, wav.getnchannels()).mean(axis=1)
-        scale = 32768.0 if wav.getsampwidth() == 2 else 1.0
-        return frames.astype(np.float64) / scale
+    # soundfile handles the PCM16 page assets as well as PCM24/float model
+    # exports, which avoids silently misreading a 24-bit output as float32.
+    frames, sample_rate = sf.read(path, always_2d=True)
+    if sample_rate != FS:
+        raise ValueError(f"Expected 48 kHz: {path}")
+    return frames.mean(axis=1).astype(np.float64)
 
 
 def write_wav(path: Path, x: np.ndarray) -> None:

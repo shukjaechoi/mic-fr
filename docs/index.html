@@ -19,7 +19,7 @@
     </section>
 
     <section class="panel listen" aria-labelledby="listen-title">
-      <div class="section-title"><div><span class="index">01 / LISTEN</span><h2 id="listen-title">11트랙 Solo 비교</h2></div><p>7개 원본 비교 음원과 스펙트럼 FIR·IIR·NAM A2·train-only Hybrid FIR 변환본. Solo를 바꾸면 같은 시점에서 이어집니다.</p></div>
+      <div class="section-title"><div><span class="index">01 / LISTEN</span><h2 id="listen-title">12트랙 Solo 비교</h2></div><p>7개 원본 비교 음원과 스펙트럼 FIR·IIR·NAM A2·Hybrid FIR·정책 TCN 변환본. Solo를 바꾸면 같은 시점에서 이어집니다.</p></div>
       <div class="waveform-heading"><strong>전체 음원 파형</strong><span>클릭: 재생 위치 이동 · 드래그: 반복 구간 선택</span></div>
       <div id="waveform" class="waveform" role="group" aria-label="전체 음원 파형에서 재생 위치 또는 반복 구간 선택" style="height:104px"><canvas id="waveform-canvas" width="1200" height="104" aria-hidden="true"></canvas><span id="waveform-region" class="waveform-region"></span><span id="waveform-playhead" class="waveform-playhead"></span></div>
       <div class="waveform-times"><span>0:00</span><span id="waveform-total">—</span></div>
@@ -28,7 +28,7 @@
       <div class="region"><div class="region-head"><div><strong>구간 반복</strong><span id="region-summary">0:00 – 끝</span></div><label class="loop-toggle"><input id="loop" type="checkbox" checked> 끝에서 반복</label></div><div class="region-sliders"><label>시작 <input id="region-start" type="range" min="0" max="1000" value="0" aria-label="반복 구간 시작"><output id="start-value">0:00</output></label><label>끝 <input id="region-end" type="range" min="0" max="1000" value="1000" aria-label="반복 구간 끝"><output id="end-value">—</output></label></div><div class="region-actions"><button id="set-start" type="button">현재 위치 → 시작</button><button id="set-end" type="button">현재 위치 → 끝</button><button id="reset-region" type="button">전체 구간</button><button id="replay-region" type="button" class="primary-action">↺ 선택 구간 재생</button></div></div>
       <div class="track-heading"><span>TRACK / SOLO</span><span>공통 타임라인 · 클릭해서 이동</span></div>
       <div class="track-list" id="mic-buttons"></div>
-      <p class="hint">헤드폰을 권장합니다. <strong>iphone2km184</strong>는 전체 비교 녹음의 스펙트럼으로 맞춘 4,097-tap FIR이고, <strong>iphone2km184-IIR</strong>은 이를 넓은 2차 필터 6개로 근사한 보정본입니다. <strong>iPhone - NAM A2 Full-500</strong>은 같은 녹음 쌍으로 학습한 비선형 변환본입니다. <strong>iPhone - Hybrid FIR train-only</strong>는 앞 50초로만 만든 FIR base입니다. 이어서 programme support·coherence·레벨별 안정성으로 정한 1/6옥타브 관심 대역에만 32채널 causal TCN 잔차를 적용해 보았지만, 마지막 held-out 구간의 70 Hz–4 kHz MAE는 Hybrid FIR 2.874 dB보다 2.888 dB로 나빠져 청취 후보에 추가하지 않았습니다. 모두 iPhone의 추정 음색만 바꾸며 KM184의 잡음·왜곡·지향성은 재현하지 못합니다.</p>
+      <p class="hint">헤드폰을 권장합니다. <strong>iphone2km184</strong>는 전체 비교 녹음의 스펙트럼으로 맞춘 4,097-tap FIR이고, <strong>iphone2km184-IIR</strong>은 이를 넓은 2차 필터 6개로 근사한 보정본입니다. <strong>iPhone - NAM A2 Full-500</strong>은 같은 녹음 쌍으로 학습한 비선형 변환본입니다. <strong>iPhone - Hybrid FIR train-only</strong>는 앞 50초로만 만든 FIR base입니다. <strong>iPhone - Policy TCN32 (not selected)</strong>는 programme support·coherence·레벨별 안정성으로 정한 1/6옥타브 관심 대역에만 32채널 causal TCN 잔차를 붙인 새 실험입니다. 마지막 held-out 구간의 70 Hz–4 kHz MAE는 Hybrid FIR 2.874 dB보다 2.888 dB로 나빠졌으므로 비교용 트랙이며 앱 후보가 아닙니다. 모두 iPhone의 추정 음색만 바꾸며 KM184의 잡음·왜곡·지향성은 재현하지 못합니다.</p>
     </section>
 
     <section class="panel graph-section" aria-labelledby="graph-title">
@@ -46,6 +46,6 @@
     <section class="setup" aria-labelledby="setup-title"><div class="setup-heading"><span class="index">05 / RECORDING SETUP</span><h2 id="setup-title">녹음 현장</h2><p>마이크를 가까이 모아 배치한 당시 모습입니다. 각 캡슐의 거리와 지향각이 완전히 같지는 않으므로, 앞의 곡선에는 배치 차이도 반영됩니다.</p></div><figure><img src="./assets/recording-setup.jpg" alt="여러 마이크와 휴대용 레코더를 가까이 배치한 녹음 현장" width="1600" height="1200" loading="eager"><figcaption>이번 비교 음원 녹음 배치 · 사용자 제공 사진</figcaption></figure></section>
   </main>
   <footer>MIC / FIELD NOTES <span>Relative listening study · 48 kHz · mono comparison exports</span></footer>
-  <script src="./app.js?v=20260929-policy-tcn" defer></script>
+  <script src="./app.js?v=20260929-policy-tcn32-track" defer></script>
 </body>
 </html>
