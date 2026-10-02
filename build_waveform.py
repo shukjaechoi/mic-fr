@@ -8,7 +8,7 @@ import struct
 import wave
 from pathlib import Path
 
-data_dir = Path(__file__).parent / 'docs' / 'data'
+data_dir = Path(__file__).parent / 'docs' / 'experiments' / '20260922' / 'data'
 with wave.open(str(data_dir / 'km184.wav'), 'rb') as wav:
     assert wav.getnchannels() == 1 and wav.getsampwidth() == 2
     frames = wav.getnframes()

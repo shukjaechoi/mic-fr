@@ -12,7 +12,7 @@ import numpy as np
 from analyze import FS, lufs, spectrum, smooth_log, content_coverage
 from build_iphone_eq import read_wav, write_wav
 
-DATA = Path(__file__).parent / 'docs' / 'data'
+DATA = Path(__file__).parent / 'docs' / 'experiments' / '20260922' / 'data'
 ANALYSIS = DATA / 'analysis.json'
 OUT = DATA / 'iphone2km184-iir.wav'
 ID = 'iphone2km184-iir'

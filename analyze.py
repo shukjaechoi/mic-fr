@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 
 SOURCE = Path('/Users/sjchoi/dev/mic-fr')
-OUT = Path(__file__).parent / 'docs' / 'data'
+OUT = Path(__file__).parent / 'docs' / 'experiments' / '20260922' / 'data'
 OUT.mkdir(parents=True, exist_ok=True)
 FS = 48000
 TARGET = -20.0

@@ -17,7 +17,7 @@ import soundfile as sf
 from analyze import FS, content_coverage, lag_estimate, lufs, smooth_log, spectrum
 
 
-DATA = Path(__file__).parent / "docs" / "data"
+DATA = Path(__file__).parent / "docs" / "experiments" / "20260922" / "data"
 DEFAULT_INPUT = Path(__file__).parents[2] / "runs" / "comparison" / "iphone_nam_a2_full_500_timeline.wav"
 ID = "iphone-nam-a2-full-500"
 

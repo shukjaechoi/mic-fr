@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1118">
+  <title>측정신호와 기타 연주 — 마이크 상대 비교</title>
+  <meta name="description" content="5개 마이크·장치의 speaker 측정신호와 guitar 녹음 기반 상대 스펙트럼 및 LUFS 정렬 A/B 비교.">
+  <link rel="stylesheet" href="./style.css?v=20261002">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="../../"><span class="brand-dot"></span>MIC / FIELD NOTES</a><span class="edition">EXP 02 · SPEAKER / GUITAR</span></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">MEASURE BROADLY. VERIFY MUSICALLY.</div>
+      <h1>측정신호와<br><em>기타 연주</em></h1>
+      <p><strong>speaker 측정신호</strong>로 얻은 상대 응답을 실제 <strong>guitar 연주</strong>만으로도 비슷하게 추정할 수 있는지 비교합니다. 신호가 부족한 저·고역은 흐리게 표시해 과해석을 피했습니다.</p>
+      <div class="hero-stats"><div><b>05</b><span>동시 비교 장치</span></div><div><b id="speaker-band">—</b><span>측정신호 유효 대역</span></div><div><b id="guitar-band">—</b><span>기타 강한 대역</span></div></div>
+    </section>
+
+    <section class="panel listen" aria-labelledby="listen-title">
+      <div class="section-title"><div><span class="index">01 / LISTEN</span><h2 id="listen-title">Guitar Solo 비교</h2></div><p>같은 기타 연주 구간 · 클록 드리프트와 LUFS 보정</p></div>
+      <div class="waveform-heading"><strong>대표 기타 구간 파형</strong><span>클릭: 이동 · 드래그: 반복 구간 선택</span></div>
+      <div id="waveform" class="waveform" role="group" aria-label="기타 음원 파형에서 재생 위치 또는 반복 구간 선택"><canvas id="waveform-canvas" width="1200" height="104" aria-hidden="true"></canvas><span id="waveform-region" class="waveform-region"></span><span id="waveform-playhead" class="waveform-playhead"></span></div>
+      <div class="waveform-times"><span>0:00</span><span id="waveform-total">—</span></div>
+      <div class="transport"><button id="play" class="play" aria-label="재생">▶</button><div class="scrub"><div class="time-row"><span id="current">0:00</span><span id="total">0:00</span></div><input id="seek" type="range" min="0" max="1000" value="0" aria-label="전체 재생 위치"></div><label class="volume">볼륨<input id="volume" type="range" min="0" max="100" value="75" aria-label="볼륨"></label></div>
+      <p id="audio-status" class="audio-status" role="status">재생 준비 중…</p>
+      <div class="region"><div class="region-head"><div><strong>구간 반복</strong><span id="region-summary">0:00 – 끝</span></div><label class="loop-toggle"><input id="loop" type="checkbox" checked> 끝에서 반복</label></div><div class="region-sliders"><label>시작 <input id="region-start" type="range" min="0" max="1000" value="0"><output id="start-value">0:00</output></label><label>끝 <input id="region-end" type="range" min="0" max="1000" value="1000"><output id="end-value">—</output></label></div><div class="region-actions"><button id="set-start" type="button">현재 위치 → 시작</button><button id="set-end" type="button">현재 위치 → 끝</button><button id="reset-region" type="button">전체 구간</button><button id="replay-region" type="button" class="primary-action">↺ 선택 구간 재생</button></div></div>
+      <div class="track-heading"><span>GUITAR TRACK / SOLO</span><span>Solo 전환 시 18 ms 크로스페이드</span></div>
+      <div class="track-list" id="mic-buttons"></div>
+      <p class="hint">5개 파일은 KM184 시간축에 맞춰 재표본화했고, 이 90초 발췌본의 통합 음량을 동일하게 맞췄습니다. Solo를 바꿔도 같은 연주 시점이 이어집니다. 음색 외에 노이즈·내장 DSP·왜곡·공간감의 차이도 그대로 포함됩니다.</p>
+    </section>
+
+    <section class="panel graph-section" aria-labelledby="graph-title">
+      <div class="section-title"><div><span class="index">02 / RESPONSE</span><h2 id="graph-title">상대 스펙트럼 비교</h2></div><p><strong>KM184 기준</strong> · 500–2,000 Hz 중앙값 0 dB</p></div>
+      <div class="dataset-tabs" role="group" aria-label="분석 신호 선택"><button data-mode="speaker" class="active">speaker 측정신호</button><button data-mode="guitar">guitar 연주</button><button data-mode="both">두 결과 겹치기</button></div>
+      <div class="chart-controls"><label class="focus-band-toggle"><input id="focus-band" type="checkbox" checked> 50 Hz–6 kHz 집중 보기</label><button id="select-all" type="button">전체 선택</button><button id="clear" type="button">선택 해제</button></div>
+      <div class="chart-wrap"><canvas id="chart" role="img" aria-label="speaker와 guitar 기반 주파수별 상대 레벨 그래프"></canvas></div>
+      <div class="coverage-lines"><div><span class="coverage-ramp speaker-ramp"></span><b>speaker 신호량</b><strong id="speaker-support">—</strong></div><div><span class="coverage-ramp guitar-ramp"></span><b>guitar 신호량</b><strong id="guitar-support">—</strong></div></div>
+      <div id="legend" class="legend"></div>
+      <p class="chart-note"><strong>실선은 speaker, 점선은 guitar</strong>에서 추정한 상대 곡선입니다. 레전드에 올리면 해당 곡선 아래의 채움이 보이며, 진할수록 그 입력 신호에 해당 주파수가 충분히 들어 있었습니다. 기타의 저역과 고역이 흐린 것은 마이크가 나빠서가 아니라 <strong>이번 연주가 그 대역을 충분히 자극하지 않아 판단력이 떨어진다</strong>는 뜻입니다. 1/6옥타브 평활.</p>
+    </section>
+
+    <section class="panel readings" aria-labelledby="agreement-title">
+      <div class="section-title"><div><span class="index">03 / AGREEMENT</span><h2 id="agreement-title">기타만으로 얼마나 비슷했나</h2></div><p id="comparison-band">공통 신뢰 대역 —</p></div>
+      <div class="agreement-grid" id="agreement-cards"></div>
+      <p class="hint">오차는 speaker 곡선과 guitar 곡선의 공통 정보량으로 가중한 RMS 차이입니다. 작을수록 두 방법이 비슷합니다. 상관계수는 곡선의 오르내림 모양이 얼마나 같은지 보여주지만, KM184 자체는 기준이라 비교 점수에서 제외해 해석해야 합니다.</p>
+    </section>
+
+    <section class="method"><div><span class="index">04 / METHOD</span><h2>같은 마이크라도<br><em>입력 신호가 중요합니다.</em></h2></div><div class="method-copy"><p id="method-copy"></p><p id="limits-copy"></p><p><strong>speaker 곡선</strong>은 이번 환경에서 더 넓은 대역을 자극하므로 주파수별 상대 차이를 보는 기준입니다. <strong>guitar 곡선</strong>은 실제 사용 조건에 더 가깝지만, 기타가 거의 내지 않은 대역은 마이크 응답과 잡음·방 반사를 분리할 수 없습니다. 따라서 두 곡선의 불일치가 곧 마이크의 비선형성이나 ‘해상도 부족’을 뜻하지는 않습니다.</p><p>기타 녹음 품질을 더 세밀하게 비교하려면 같은 연주에 강약·피킹 위치·뮤트·하모닉스·짧은 트랜지언트·긴 서스테인을 의도적으로 섞고 여러 테이크를 반복하는 편이 좋습니다. 그러면 시간별 STFT, 어택 보존, 노이즈 플로어, 다이내믹 범위와 구간별 일관성을 별도로 비교할 수 있습니다.</p></div></section>
+  </main>
+  <footer><a href="../../">← ALL EXPERIMENTS</a><span>2026-10-02 · 48 kHz · relative comparison</span></footer>
+  <script src="./app.js?v=20261002" defer></script>
+</body>
+</html>
