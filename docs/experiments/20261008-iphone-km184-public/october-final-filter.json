@@ -1,0 +1,73 @@
+{
+  "status": "frozen_october_use_filter",
+  "selected": "broad",
+  "scope": "October 2026-10-02 iPhone guitar recording and matching setup; not general-session validated",
+  "sampling_rate_hz": 48000,
+  "sos": [
+    [
+      1.0009467237103844,
+      -1.9890896395307376,
+      0.9883883351497103,
+      1.0,
+      -1.9890896395307376,
+      0.9893350588600945
+    ],
+    [
+      1.0120979548220548,
+      -1.9002992691470884,
+      0.9014652601188664,
+      1.0,
+      -1.9002992691470884,
+      0.913563214940921
+    ],
+    [
+      1.0243254148398229,
+      -1.8708908911090802,
+      0.8739845533390959,
+      1.0,
+      -1.8708908911090802,
+      0.8983099681789187
+    ],
+    [
+      0.9891798224958581,
+      -1.7665782791560236,
+      0.8334800426239104,
+      1.0,
+      -1.7665782791560236,
+      0.8226598651197687
+    ],
+    [
+      0.9653549327341162,
+      -1.6589031187493117,
+      0.794490283528587,
+      1.0,
+      -1.6589031187493117,
+      0.7598452162627032
+    ]
+  ],
+  "sos_sha256": "b7e4041ce8bd79efbe963671efe6aa29abaecfa76dc1e6d26a92f9fc5051f2e4",
+  "output_gain_db": -2.5,
+  "output_gain_linear": 0.7498942093324559,
+  "peak_after_gain_dbfs": -3.149,
+  "section_centers_hz": [
+    900.0,
+    1300.0,
+    1900.0,
+    2600.0
+  ],
+  "section_q": [
+    1.15,
+    1.3,
+    1.35,
+    1.45
+  ],
+  "mid_gains_db": [
+    2.143697708263175,
+    3.395973026547189,
+    -1.1303807175587173,
+    -2.9567804531495065
+  ],
+  "low_sos_source": "low-only-iir-frozen-v1.json",
+  "selection_reason": "Select conservative only if failures fall and group-equal MAE is within 0.20 dB; otherwise retain broad October prototype.",
+  "publication_note": "The full-length corrected WAV is local-only. Public Pages includes five-second matched technique clips."
+}

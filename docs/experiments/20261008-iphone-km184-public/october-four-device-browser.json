@@ -1,0 +1,2775 @@
+{
+  "selection": "Common eligible October window closest to each technique median time; piece at KM184 1910s. Fixed full-fit SOS applied to previews.",
+  "display": "Each device raw and filtered use the same 335.7/597.7Hz reference-matching gain. All nine versions of the same phrase share one peak-safety scale and one spectrogram color range. Deployment output gain is not part of these comparison clips.",
+  "clips": [
+    {
+      "group": "arpeggio",
+      "label": "아르페지오",
+      "start_s": 155.0,
+      "end_s": 160.0,
+      "display_anchor_db": {
+        "iphone": -8.236,
+        "s21": -2.446,
+        "h1": -0.493,
+        "d10": -4.801
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-arpeggio-0155-km184.wav",
+          "spectrogram": "oct4-arpeggio-0155-km184.png",
+          "web_spectrogram": "oct4-arpeggio-0155-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-arpeggio-0155-iphone-raw.wav",
+          "spectrogram": "oct4-arpeggio-0155-iphone-raw.png",
+          "web_spectrogram": "oct4-arpeggio-0155-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-arpeggio-0155-iphone-after.wav",
+          "spectrogram": "oct4-arpeggio-0155-iphone-after.png",
+          "web_spectrogram": "oct4-arpeggio-0155-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-arpeggio-0155-s21-raw.wav",
+          "spectrogram": "oct4-arpeggio-0155-s21-raw.png",
+          "web_spectrogram": "oct4-arpeggio-0155-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-arpeggio-0155-s21-after.wav",
+          "spectrogram": "oct4-arpeggio-0155-s21-after.png",
+          "web_spectrogram": "oct4-arpeggio-0155-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-arpeggio-0155-h1-raw.wav",
+          "spectrogram": "oct4-arpeggio-0155-h1-raw.png",
+          "web_spectrogram": "oct4-arpeggio-0155-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-arpeggio-0155-h1-after.wav",
+          "spectrogram": "oct4-arpeggio-0155-h1-after.png",
+          "web_spectrogram": "oct4-arpeggio-0155-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-arpeggio-0155-d10-raw.wav",
+          "spectrogram": "oct4-arpeggio-0155-d10-raw.png",
+          "web_spectrogram": "oct4-arpeggio-0155-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-arpeggio-0155-d10-after.wav",
+          "spectrogram": "oct4-arpeggio-0155-d10-after.png",
+          "web_spectrogram": "oct4-arpeggio-0155-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-arpeggio-0155-iphone-before.png",
+          "after": "oct4-residual-arpeggio-0155-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-arpeggio-0155-s21-before.png",
+          "after": "oct4-residual-arpeggio-0155-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-arpeggio-0155-h1-before.png",
+          "after": "oct4-residual-arpeggio-0155-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-arpeggio-0155-d10-before.png",
+          "after": "oct4-residual-arpeggio-0155-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -12.0,
+              "abs_db": 12.0
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -12.0,
+              "abs_db": 12.0
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -11.84,
+              "abs_db": 11.84
+            },
+            {
+              "start_s": 2.5,
+              "end_s": 3.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -10.98,
+              "abs_db": 10.98
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 7.39,
+              "abs_db": 7.39
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 7.24,
+              "abs_db": 7.24
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 6.77,
+              "abs_db": 6.77
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 6.65,
+              "abs_db": 6.65
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 2.5,
+              "end_s": 3.0,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 4.37,
+              "abs_db": 4.37
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 4.12,
+              "abs_db": 4.12
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 3.22,
+              "abs_db": 3.22
+            },
+            {
+              "start_s": 2.5,
+              "end_s": 3.0,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 3.02,
+              "abs_db": 3.02
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 4.62,
+              "abs_db": 4.62
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 3.85,
+              "abs_db": 3.85
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 4.3,
+              "abs_db": 4.3
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 3.53,
+              "abs_db": 3.53
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "strum",
+      "label": "스트로크",
+      "start_s": 216.0,
+      "end_s": 221.0,
+      "display_anchor_db": {
+        "iphone": -4.516,
+        "s21": -4.067,
+        "h1": -0.817,
+        "d10": -5.12
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-strum-0216-km184.wav",
+          "spectrogram": "oct4-strum-0216-km184.png",
+          "web_spectrogram": "oct4-strum-0216-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-strum-0216-iphone-raw.wav",
+          "spectrogram": "oct4-strum-0216-iphone-raw.png",
+          "web_spectrogram": "oct4-strum-0216-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-strum-0216-iphone-after.wav",
+          "spectrogram": "oct4-strum-0216-iphone-after.png",
+          "web_spectrogram": "oct4-strum-0216-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-strum-0216-s21-raw.wav",
+          "spectrogram": "oct4-strum-0216-s21-raw.png",
+          "web_spectrogram": "oct4-strum-0216-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-strum-0216-s21-after.wav",
+          "spectrogram": "oct4-strum-0216-s21-after.png",
+          "web_spectrogram": "oct4-strum-0216-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-strum-0216-h1-raw.wav",
+          "spectrogram": "oct4-strum-0216-h1-raw.png",
+          "web_spectrogram": "oct4-strum-0216-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-strum-0216-h1-after.wav",
+          "spectrogram": "oct4-strum-0216-h1-after.png",
+          "web_spectrogram": "oct4-strum-0216-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-strum-0216-d10-raw.wav",
+          "spectrogram": "oct4-strum-0216-d10-raw.png",
+          "web_spectrogram": "oct4-strum-0216-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-strum-0216-d10-after.wav",
+          "spectrogram": "oct4-strum-0216-d10-after.png",
+          "web_spectrogram": "oct4-strum-0216-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-strum-0216-iphone-before.png",
+          "after": "oct4-residual-strum-0216-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-strum-0216-s21-before.png",
+          "after": "oct4-residual-strum-0216-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-strum-0216-h1-before.png",
+          "after": "oct4-residual-strum-0216-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-strum-0216-d10-before.png",
+          "after": "oct4-residual-strum-0216-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -8.48,
+              "abs_db": 8.48
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -8.39,
+              "abs_db": 8.39
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -4.89,
+              "abs_db": 4.89
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -4.66,
+              "abs_db": 4.66
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -6.75,
+              "abs_db": 6.75
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -6.68,
+              "abs_db": 6.68
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": 5.55,
+              "abs_db": 5.55
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 356,
+              "high_hz": 449,
+              "signed_device_minus_km_db": -4.52,
+              "abs_db": 4.52
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": -3.26,
+              "abs_db": 3.26
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -3.21,
+              "abs_db": 3.21
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": 2.74,
+              "abs_db": 2.74
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 2263,
+              "high_hz": 2851,
+              "signed_device_minus_km_db": -1.93,
+              "abs_db": 1.93
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": 2.38,
+              "abs_db": 2.38
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 1.97,
+              "abs_db": 1.97
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": 2.29,
+              "abs_db": 2.29
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 1.28,
+              "abs_db": 1.28
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "open_notes",
+      "label": "개방현 단음",
+      "start_s": 418.0,
+      "end_s": 423.0,
+      "display_anchor_db": {
+        "iphone": -7.468,
+        "s21": -0.922,
+        "h1": -0.462,
+        "d10": -5.341
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-open_notes-0418-km184.wav",
+          "spectrogram": "oct4-open_notes-0418-km184.png",
+          "web_spectrogram": "oct4-open_notes-0418-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-open_notes-0418-iphone-raw.wav",
+          "spectrogram": "oct4-open_notes-0418-iphone-raw.png",
+          "web_spectrogram": "oct4-open_notes-0418-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-open_notes-0418-iphone-after.wav",
+          "spectrogram": "oct4-open_notes-0418-iphone-after.png",
+          "web_spectrogram": "oct4-open_notes-0418-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-open_notes-0418-s21-raw.wav",
+          "spectrogram": "oct4-open_notes-0418-s21-raw.png",
+          "web_spectrogram": "oct4-open_notes-0418-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-open_notes-0418-s21-after.wav",
+          "spectrogram": "oct4-open_notes-0418-s21-after.png",
+          "web_spectrogram": "oct4-open_notes-0418-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-open_notes-0418-h1-raw.wav",
+          "spectrogram": "oct4-open_notes-0418-h1-raw.png",
+          "web_spectrogram": "oct4-open_notes-0418-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-open_notes-0418-h1-after.wav",
+          "spectrogram": "oct4-open_notes-0418-h1-after.png",
+          "web_spectrogram": "oct4-open_notes-0418-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-open_notes-0418-d10-raw.wav",
+          "spectrogram": "oct4-open_notes-0418-d10-raw.png",
+          "web_spectrogram": "oct4-open_notes-0418-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-open_notes-0418-d10-after.wav",
+          "spectrogram": "oct4-open_notes-0418-d10-after.png",
+          "web_spectrogram": "oct4-open_notes-0418-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-open_notes-0418-iphone-before.png",
+          "after": "oct4-residual-open_notes-0418-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-open_notes-0418-s21-before.png",
+          "after": "oct4-residual-open_notes-0418-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-open_notes-0418-h1-before.png",
+          "after": "oct4-residual-open_notes-0418-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-open_notes-0418-d10-before.png",
+          "after": "oct4-residual-open_notes-0418-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -10.98,
+              "abs_db": 10.98
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -10.73,
+              "abs_db": 10.73
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -7.21,
+              "abs_db": 7.21
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -6.73,
+              "abs_db": 6.73
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 6.0,
+              "abs_db": 6.0
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -3.5,
+              "abs_db": 3.5
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 5.37,
+              "abs_db": 5.37
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -3.74,
+              "abs_db": 3.74
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 2.53,
+              "abs_db": 2.53
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 2.23,
+              "abs_db": 2.23
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 449,
+              "high_hz": 566,
+              "signed_device_minus_km_db": 1.73,
+              "abs_db": 1.73
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 1.62,
+              "abs_db": 1.62
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": -2.28,
+              "abs_db": 2.28
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 224,
+              "high_hz": 283,
+              "signed_device_minus_km_db": 1.9,
+              "abs_db": 1.9
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": -2.43,
+              "abs_db": 2.43
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 449,
+              "high_hz": 566,
+              "signed_device_minus_km_db": 1.73,
+              "abs_db": 1.73
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "scale",
+      "label": "스케일",
+      "start_s": 688.0,
+      "end_s": 693.0,
+      "display_anchor_db": {
+        "iphone": -6.971,
+        "s21": -3.191,
+        "h1": -0.348,
+        "d10": -5.102
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-scale-0688-km184.wav",
+          "spectrogram": "oct4-scale-0688-km184.png",
+          "web_spectrogram": "oct4-scale-0688-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-scale-0688-iphone-raw.wav",
+          "spectrogram": "oct4-scale-0688-iphone-raw.png",
+          "web_spectrogram": "oct4-scale-0688-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-scale-0688-iphone-after.wav",
+          "spectrogram": "oct4-scale-0688-iphone-after.png",
+          "web_spectrogram": "oct4-scale-0688-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-scale-0688-s21-raw.wav",
+          "spectrogram": "oct4-scale-0688-s21-raw.png",
+          "web_spectrogram": "oct4-scale-0688-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-scale-0688-s21-after.wav",
+          "spectrogram": "oct4-scale-0688-s21-after.png",
+          "web_spectrogram": "oct4-scale-0688-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-scale-0688-h1-raw.wav",
+          "spectrogram": "oct4-scale-0688-h1-raw.png",
+          "web_spectrogram": "oct4-scale-0688-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-scale-0688-h1-after.wav",
+          "spectrogram": "oct4-scale-0688-h1-after.png",
+          "web_spectrogram": "oct4-scale-0688-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-scale-0688-d10-raw.wav",
+          "spectrogram": "oct4-scale-0688-d10-raw.png",
+          "web_spectrogram": "oct4-scale-0688-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-scale-0688-d10-after.wav",
+          "spectrogram": "oct4-scale-0688-d10-after.png",
+          "web_spectrogram": "oct4-scale-0688-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-scale-0688-iphone-before.png",
+          "after": "oct4-residual-scale-0688-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-scale-0688-s21-before.png",
+          "after": "oct4-residual-scale-0688-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-scale-0688-h1-before.png",
+          "after": "oct4-residual-scale-0688-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-scale-0688-d10-before.png",
+          "after": "oct4-residual-scale-0688-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 449,
+              "high_hz": 566,
+              "signed_device_minus_km_db": -5.05,
+              "abs_db": 5.05
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -4.8,
+              "abs_db": 4.8
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -7.61,
+              "abs_db": 7.61
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 449,
+              "high_hz": 566,
+              "signed_device_minus_km_db": -4.14,
+              "abs_db": 4.14
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -6.1,
+              "abs_db": 6.1
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -6.01,
+              "abs_db": 6.01
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": -4.59,
+              "abs_db": 4.59
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 3.52,
+              "abs_db": 3.52
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 3.41,
+              "abs_db": 3.41
+            },
+            {
+              "start_s": 2.5,
+              "end_s": 3.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 3.16,
+              "abs_db": 3.16
+            }
+          ],
+          "after": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 2.52,
+              "abs_db": 2.52
+            },
+            {
+              "start_s": 2.5,
+              "end_s": 3.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 2.38,
+              "abs_db": 2.38
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 2.16,
+              "abs_db": 2.16
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 1.85,
+              "abs_db": 1.85
+            }
+          ],
+          "after": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 1.89,
+              "abs_db": 1.89
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 449,
+              "high_hz": 566,
+              "signed_device_minus_km_db": 1.57,
+              "abs_db": 1.57
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "dynamics",
+      "label": "다이내믹",
+      "start_s": 1258.0,
+      "end_s": 1263.0,
+      "display_anchor_db": {
+        "iphone": -5.943,
+        "s21": -0.821,
+        "h1": -1.879,
+        "d10": -6.42
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-dynamics-1258-km184.wav",
+          "spectrogram": "oct4-dynamics-1258-km184.png",
+          "web_spectrogram": "oct4-dynamics-1258-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-dynamics-1258-iphone-raw.wav",
+          "spectrogram": "oct4-dynamics-1258-iphone-raw.png",
+          "web_spectrogram": "oct4-dynamics-1258-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-dynamics-1258-iphone-after.wav",
+          "spectrogram": "oct4-dynamics-1258-iphone-after.png",
+          "web_spectrogram": "oct4-dynamics-1258-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-dynamics-1258-s21-raw.wav",
+          "spectrogram": "oct4-dynamics-1258-s21-raw.png",
+          "web_spectrogram": "oct4-dynamics-1258-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-dynamics-1258-s21-after.wav",
+          "spectrogram": "oct4-dynamics-1258-s21-after.png",
+          "web_spectrogram": "oct4-dynamics-1258-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-dynamics-1258-h1-raw.wav",
+          "spectrogram": "oct4-dynamics-1258-h1-raw.png",
+          "web_spectrogram": "oct4-dynamics-1258-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-dynamics-1258-h1-after.wav",
+          "spectrogram": "oct4-dynamics-1258-h1-after.png",
+          "web_spectrogram": "oct4-dynamics-1258-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-dynamics-1258-d10-raw.wav",
+          "spectrogram": "oct4-dynamics-1258-d10-raw.png",
+          "web_spectrogram": "oct4-dynamics-1258-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-dynamics-1258-d10-after.wav",
+          "spectrogram": "oct4-dynamics-1258-d10-after.png",
+          "web_spectrogram": "oct4-dynamics-1258-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-dynamics-1258-iphone-before.png",
+          "after": "oct4-residual-dynamics-1258-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-dynamics-1258-s21-before.png",
+          "after": "oct4-residual-dynamics-1258-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-dynamics-1258-h1-before.png",
+          "after": "oct4-residual-dynamics-1258-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-dynamics-1258-d10-before.png",
+          "after": "oct4-residual-dynamics-1258-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -7.55,
+              "abs_db": 7.55
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 6.9,
+              "abs_db": 6.9
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 6.06,
+              "abs_db": 6.06
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 5.92,
+              "abs_db": 5.92
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -6.67,
+              "abs_db": 6.67
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -5.78,
+              "abs_db": 5.78
+            }
+          ],
+          "after": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -7.11,
+              "abs_db": 7.11
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -6.21,
+              "abs_db": 6.21
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 4.12,
+              "abs_db": 4.12
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 4.11,
+              "abs_db": 4.11
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 224,
+              "high_hz": 283,
+              "signed_device_minus_km_db": -2.98,
+              "abs_db": 2.98
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 2.85,
+              "abs_db": 2.85
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 1.6,
+              "abs_db": 1.6
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 1.54,
+              "abs_db": 1.54
+            }
+          ],
+          "after": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -1.22,
+              "abs_db": 1.22
+            },
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -1.18,
+              "abs_db": 1.18
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "slur",
+      "label": "슬러",
+      "start_s": 1328.0,
+      "end_s": 1333.0,
+      "display_anchor_db": {
+        "iphone": -7.276,
+        "s21": -1.87,
+        "h1": -0.765,
+        "d10": -5.237
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-slur-1328-km184.wav",
+          "spectrogram": "oct4-slur-1328-km184.png",
+          "web_spectrogram": "oct4-slur-1328-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-slur-1328-iphone-raw.wav",
+          "spectrogram": "oct4-slur-1328-iphone-raw.png",
+          "web_spectrogram": "oct4-slur-1328-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-slur-1328-iphone-after.wav",
+          "spectrogram": "oct4-slur-1328-iphone-after.png",
+          "web_spectrogram": "oct4-slur-1328-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-slur-1328-s21-raw.wav",
+          "spectrogram": "oct4-slur-1328-s21-raw.png",
+          "web_spectrogram": "oct4-slur-1328-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-slur-1328-s21-after.wav",
+          "spectrogram": "oct4-slur-1328-s21-after.png",
+          "web_spectrogram": "oct4-slur-1328-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-slur-1328-h1-raw.wav",
+          "spectrogram": "oct4-slur-1328-h1-raw.png",
+          "web_spectrogram": "oct4-slur-1328-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-slur-1328-h1-after.wav",
+          "spectrogram": "oct4-slur-1328-h1-after.png",
+          "web_spectrogram": "oct4-slur-1328-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-slur-1328-d10-raw.wav",
+          "spectrogram": "oct4-slur-1328-d10-raw.png",
+          "web_spectrogram": "oct4-slur-1328-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-slur-1328-d10-after.wav",
+          "spectrogram": "oct4-slur-1328-d10-after.png",
+          "web_spectrogram": "oct4-slur-1328-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-slur-1328-iphone-before.png",
+          "after": "oct4-residual-slur-1328-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-slur-1328-s21-before.png",
+          "after": "oct4-residual-slur-1328-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-slur-1328-h1-before.png",
+          "after": "oct4-residual-slur-1328-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-slur-1328-d10-before.png",
+          "after": "oct4-residual-slur-1328-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -9.02,
+              "abs_db": 9.02
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -8.37,
+              "abs_db": 8.37
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -6.35,
+              "abs_db": 6.35
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -5.54,
+              "abs_db": 5.54
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -5.45,
+              "abs_db": 5.45
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 5.35,
+              "abs_db": 5.35
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -5.19,
+              "abs_db": 5.19
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 5.16,
+              "abs_db": 5.16
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 2.95,
+              "abs_db": 2.95
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -2.72,
+              "abs_db": 2.72
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 2.08,
+              "abs_db": 2.08
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 449,
+              "high_hz": 566,
+              "signed_device_minus_km_db": 1.44,
+              "abs_db": 1.44
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 1.87,
+              "abs_db": 1.87
+            },
+            {
+              "start_s": 1.5,
+              "end_s": 2.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 1.53,
+              "abs_db": 1.53
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -1.71,
+              "abs_db": 1.71
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": 1.55,
+              "abs_db": 1.55
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "complex",
+      "label": "복합 화음",
+      "start_s": 1704.0,
+      "end_s": 1709.0,
+      "display_anchor_db": {
+        "iphone": -5.8,
+        "s21": -2.894,
+        "h1": -0.455,
+        "d10": -5.202
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-complex-1704-km184.wav",
+          "spectrogram": "oct4-complex-1704-km184.png",
+          "web_spectrogram": "oct4-complex-1704-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-complex-1704-iphone-raw.wav",
+          "spectrogram": "oct4-complex-1704-iphone-raw.png",
+          "web_spectrogram": "oct4-complex-1704-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-complex-1704-iphone-after.wav",
+          "spectrogram": "oct4-complex-1704-iphone-after.png",
+          "web_spectrogram": "oct4-complex-1704-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-complex-1704-s21-raw.wav",
+          "spectrogram": "oct4-complex-1704-s21-raw.png",
+          "web_spectrogram": "oct4-complex-1704-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-complex-1704-s21-after.wav",
+          "spectrogram": "oct4-complex-1704-s21-after.png",
+          "web_spectrogram": "oct4-complex-1704-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-complex-1704-h1-raw.wav",
+          "spectrogram": "oct4-complex-1704-h1-raw.png",
+          "web_spectrogram": "oct4-complex-1704-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-complex-1704-h1-after.wav",
+          "spectrogram": "oct4-complex-1704-h1-after.png",
+          "web_spectrogram": "oct4-complex-1704-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-complex-1704-d10-raw.wav",
+          "spectrogram": "oct4-complex-1704-d10-raw.png",
+          "web_spectrogram": "oct4-complex-1704-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-complex-1704-d10-after.wav",
+          "spectrogram": "oct4-complex-1704-d10-after.png",
+          "web_spectrogram": "oct4-complex-1704-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-complex-1704-iphone-before.png",
+          "after": "oct4-residual-complex-1704-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-complex-1704-s21-before.png",
+          "after": "oct4-residual-complex-1704-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-complex-1704-h1-before.png",
+          "after": "oct4-residual-complex-1704-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-complex-1704-d10-before.png",
+          "after": "oct4-residual-complex-1704-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -9.91,
+              "abs_db": 9.91
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -7.8,
+              "abs_db": 7.8
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -8.34,
+              "abs_db": 8.34
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -7.2,
+              "abs_db": 7.2
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -8.06,
+              "abs_db": 8.06
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -7.9,
+              "abs_db": 7.9
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -7.85,
+              "abs_db": 7.85
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -7.62,
+              "abs_db": 7.62
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 3.85,
+              "abs_db": 3.85
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.69,
+              "abs_db": 3.69
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.57,
+              "abs_db": 2.57
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1796,
+              "high_hz": 2263,
+              "signed_device_minus_km_db": 2.54,
+              "abs_db": 2.54
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.89,
+              "abs_db": 2.89
+            },
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.77,
+              "abs_db": 2.77
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.34,
+              "abs_db": 2.34
+            },
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.16,
+              "abs_db": 2.16
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "percussion",
+      "label": "퍼커션",
+      "start_s": 1792.0,
+      "end_s": 1797.0,
+      "display_anchor_db": {
+        "iphone": -5.532,
+        "s21": -2.01,
+        "h1": -1.445,
+        "d10": -6.089
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-percussion-1792-km184.wav",
+          "spectrogram": "oct4-percussion-1792-km184.png",
+          "web_spectrogram": "oct4-percussion-1792-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-percussion-1792-iphone-raw.wav",
+          "spectrogram": "oct4-percussion-1792-iphone-raw.png",
+          "web_spectrogram": "oct4-percussion-1792-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-percussion-1792-iphone-after.wav",
+          "spectrogram": "oct4-percussion-1792-iphone-after.png",
+          "web_spectrogram": "oct4-percussion-1792-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-percussion-1792-s21-raw.wav",
+          "spectrogram": "oct4-percussion-1792-s21-raw.png",
+          "web_spectrogram": "oct4-percussion-1792-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-percussion-1792-s21-after.wav",
+          "spectrogram": "oct4-percussion-1792-s21-after.png",
+          "web_spectrogram": "oct4-percussion-1792-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-percussion-1792-h1-raw.wav",
+          "spectrogram": "oct4-percussion-1792-h1-raw.png",
+          "web_spectrogram": "oct4-percussion-1792-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-percussion-1792-h1-after.wav",
+          "spectrogram": "oct4-percussion-1792-h1-after.png",
+          "web_spectrogram": "oct4-percussion-1792-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-percussion-1792-d10-raw.wav",
+          "spectrogram": "oct4-percussion-1792-d10-raw.png",
+          "web_spectrogram": "oct4-percussion-1792-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-percussion-1792-d10-after.wav",
+          "spectrogram": "oct4-percussion-1792-d10-after.png",
+          "web_spectrogram": "oct4-percussion-1792-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-percussion-1792-iphone-before.png",
+          "after": "oct4-residual-percussion-1792-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-percussion-1792-s21-before.png",
+          "after": "oct4-residual-percussion-1792-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-percussion-1792-h1-before.png",
+          "after": "oct4-residual-percussion-1792-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-percussion-1792-d10-before.png",
+          "after": "oct4-residual-percussion-1792-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -4.73,
+              "abs_db": 4.73
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -3.3,
+              "abs_db": 3.3
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -5.85,
+              "abs_db": 5.85
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": -5.45,
+              "abs_db": 5.45
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -2.64,
+              "abs_db": 2.64
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": -2.33,
+              "abs_db": 2.33
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -2.92,
+              "abs_db": 2.92
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": -2.86,
+              "abs_db": 2.86
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -0.95,
+              "abs_db": 0.95
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": -0.93,
+              "abs_db": 0.93
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": 0.75,
+              "abs_db": 0.75
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": 0.21,
+              "abs_db": 0.21
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -0.32,
+              "abs_db": 0.32
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 141,
+              "high_hz": 178,
+              "signed_device_minus_km_db": -0.27,
+              "abs_db": 0.27
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "glissando",
+      "label": "글리산도",
+      "start_s": 1817.0,
+      "end_s": 1822.0,
+      "display_anchor_db": {
+        "iphone": -6.074,
+        "s21": -1.522,
+        "h1": -0.886,
+        "d10": -5.139
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-glissando-1817-km184.wav",
+          "spectrogram": "oct4-glissando-1817-km184.png",
+          "web_spectrogram": "oct4-glissando-1817-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-glissando-1817-iphone-raw.wav",
+          "spectrogram": "oct4-glissando-1817-iphone-raw.png",
+          "web_spectrogram": "oct4-glissando-1817-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-glissando-1817-iphone-after.wav",
+          "spectrogram": "oct4-glissando-1817-iphone-after.png",
+          "web_spectrogram": "oct4-glissando-1817-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-glissando-1817-s21-raw.wav",
+          "spectrogram": "oct4-glissando-1817-s21-raw.png",
+          "web_spectrogram": "oct4-glissando-1817-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-glissando-1817-s21-after.wav",
+          "spectrogram": "oct4-glissando-1817-s21-after.png",
+          "web_spectrogram": "oct4-glissando-1817-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-glissando-1817-h1-raw.wav",
+          "spectrogram": "oct4-glissando-1817-h1-raw.png",
+          "web_spectrogram": "oct4-glissando-1817-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-glissando-1817-h1-after.wav",
+          "spectrogram": "oct4-glissando-1817-h1-after.png",
+          "web_spectrogram": "oct4-glissando-1817-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-glissando-1817-d10-raw.wav",
+          "spectrogram": "oct4-glissando-1817-d10-raw.png",
+          "web_spectrogram": "oct4-glissando-1817-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-glissando-1817-d10-after.wav",
+          "spectrogram": "oct4-glissando-1817-d10-after.png",
+          "web_spectrogram": "oct4-glissando-1817-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-glissando-1817-iphone-before.png",
+          "after": "oct4-residual-glissando-1817-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-glissando-1817-s21-before.png",
+          "after": "oct4-residual-glissando-1817-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-glissando-1817-h1-before.png",
+          "after": "oct4-residual-glissando-1817-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-glissando-1817-d10-before.png",
+          "after": "oct4-residual-glissando-1817-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -7.13,
+              "abs_db": 7.13
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -6.2,
+              "abs_db": 6.2
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -4.74,
+              "abs_db": 4.74
+            },
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -3.26,
+              "abs_db": 3.26
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -5.69,
+              "abs_db": 5.69
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -5.46,
+              "abs_db": 5.46
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -4.43,
+              "abs_db": 4.43
+            },
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 3.85,
+              "abs_db": 3.85
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -2.7,
+              "abs_db": 2.7
+            },
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -2.59,
+              "abs_db": 2.59
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -1.75,
+              "abs_db": 1.75
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 1.27,
+              "abs_db": 1.27
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -4.17,
+              "abs_db": 4.17
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 2.59,
+              "abs_db": 2.59
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -4.31,
+              "abs_db": 4.31
+            },
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": 2.36,
+              "abs_db": 2.36
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "tremolo",
+      "label": "트레몰로",
+      "start_s": 1847.0,
+      "end_s": 1852.0,
+      "display_anchor_db": {
+        "iphone": -6.806,
+        "s21": -2.004,
+        "h1": -0.497,
+        "d10": -4.78
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-tremolo-1847-km184.wav",
+          "spectrogram": "oct4-tremolo-1847-km184.png",
+          "web_spectrogram": "oct4-tremolo-1847-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-tremolo-1847-iphone-raw.wav",
+          "spectrogram": "oct4-tremolo-1847-iphone-raw.png",
+          "web_spectrogram": "oct4-tremolo-1847-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-tremolo-1847-iphone-after.wav",
+          "spectrogram": "oct4-tremolo-1847-iphone-after.png",
+          "web_spectrogram": "oct4-tremolo-1847-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-tremolo-1847-s21-raw.wav",
+          "spectrogram": "oct4-tremolo-1847-s21-raw.png",
+          "web_spectrogram": "oct4-tremolo-1847-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-tremolo-1847-s21-after.wav",
+          "spectrogram": "oct4-tremolo-1847-s21-after.png",
+          "web_spectrogram": "oct4-tremolo-1847-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-tremolo-1847-h1-raw.wav",
+          "spectrogram": "oct4-tremolo-1847-h1-raw.png",
+          "web_spectrogram": "oct4-tremolo-1847-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-tremolo-1847-h1-after.wav",
+          "spectrogram": "oct4-tremolo-1847-h1-after.png",
+          "web_spectrogram": "oct4-tremolo-1847-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-tremolo-1847-d10-raw.wav",
+          "spectrogram": "oct4-tremolo-1847-d10-raw.png",
+          "web_spectrogram": "oct4-tremolo-1847-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-tremolo-1847-d10-after.wav",
+          "spectrogram": "oct4-tremolo-1847-d10-after.png",
+          "web_spectrogram": "oct4-tremolo-1847-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-tremolo-1847-iphone-before.png",
+          "after": "oct4-residual-tremolo-1847-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-tremolo-1847-s21-before.png",
+          "after": "oct4-residual-tremolo-1847-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-tremolo-1847-h1-before.png",
+          "after": "oct4-residual-tremolo-1847-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-tremolo-1847-d10-before.png",
+          "after": "oct4-residual-tremolo-1847-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -8.97,
+              "abs_db": 8.97
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -7.37,
+              "abs_db": 7.37
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -6.78,
+              "abs_db": 6.78
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -5.79,
+              "abs_db": 5.79
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -9.96,
+              "abs_db": 9.96
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -8.78,
+              "abs_db": 8.78
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -9.62,
+              "abs_db": 9.62
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -8.55,
+              "abs_db": 8.55
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 4.71,
+              "abs_db": 4.71
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 4.35,
+              "abs_db": 4.35
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.57,
+              "abs_db": 3.57
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.25,
+              "abs_db": 3.25
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.15,
+              "abs_db": 3.15
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.84,
+              "abs_db": 2.84
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.57,
+              "abs_db": 2.57
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.24,
+              "abs_db": 2.24
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "rasgueado",
+      "label": "라스게아도",
+      "start_s": 1865.0,
+      "end_s": 1870.0,
+      "display_anchor_db": {
+        "iphone": -5.683,
+        "s21": -2.077,
+        "h1": -1.154,
+        "d10": -5.44
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-rasgueado-1865-km184.wav",
+          "spectrogram": "oct4-rasgueado-1865-km184.png",
+          "web_spectrogram": "oct4-rasgueado-1865-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-rasgueado-1865-iphone-raw.wav",
+          "spectrogram": "oct4-rasgueado-1865-iphone-raw.png",
+          "web_spectrogram": "oct4-rasgueado-1865-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-rasgueado-1865-iphone-after.wav",
+          "spectrogram": "oct4-rasgueado-1865-iphone-after.png",
+          "web_spectrogram": "oct4-rasgueado-1865-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-rasgueado-1865-s21-raw.wav",
+          "spectrogram": "oct4-rasgueado-1865-s21-raw.png",
+          "web_spectrogram": "oct4-rasgueado-1865-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-rasgueado-1865-s21-after.wav",
+          "spectrogram": "oct4-rasgueado-1865-s21-after.png",
+          "web_spectrogram": "oct4-rasgueado-1865-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-rasgueado-1865-h1-raw.wav",
+          "spectrogram": "oct4-rasgueado-1865-h1-raw.png",
+          "web_spectrogram": "oct4-rasgueado-1865-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-rasgueado-1865-h1-after.wav",
+          "spectrogram": "oct4-rasgueado-1865-h1-after.png",
+          "web_spectrogram": "oct4-rasgueado-1865-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-rasgueado-1865-d10-raw.wav",
+          "spectrogram": "oct4-rasgueado-1865-d10-raw.png",
+          "web_spectrogram": "oct4-rasgueado-1865-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-rasgueado-1865-d10-after.wav",
+          "spectrogram": "oct4-rasgueado-1865-d10-after.png",
+          "web_spectrogram": "oct4-rasgueado-1865-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-rasgueado-1865-iphone-before.png",
+          "after": "oct4-residual-rasgueado-1865-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-rasgueado-1865-s21-before.png",
+          "after": "oct4-residual-rasgueado-1865-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-rasgueado-1865-h1-before.png",
+          "after": "oct4-residual-rasgueado-1865-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-rasgueado-1865-d10-before.png",
+          "after": "oct4-residual-rasgueado-1865-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -10.47,
+              "abs_db": 10.47
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 2263,
+              "high_hz": 2851,
+              "signed_device_minus_km_db": 8.45,
+              "abs_db": 8.45
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -6.84,
+              "abs_db": 6.84
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 2263,
+              "high_hz": 2851,
+              "signed_device_minus_km_db": 5.91,
+              "abs_db": 5.91
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -6.27,
+              "abs_db": 6.27
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 89,
+              "high_hz": 112,
+              "signed_device_minus_km_db": -6.23,
+              "abs_db": 6.23
+            }
+          ],
+          "after": [
+            {
+              "start_s": 4.5,
+              "end_s": 5.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -5.48,
+              "abs_db": 5.48
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": 4.97,
+              "abs_db": 4.97
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 2851,
+              "high_hz": 3592,
+              "signed_device_minus_km_db": 3.41,
+              "abs_db": 3.41
+            },
+            {
+              "start_s": 2.5,
+              "end_s": 3.0,
+              "low_hz": 112,
+              "high_hz": 141,
+              "signed_device_minus_km_db": -3.29,
+              "abs_db": 3.29
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 2851,
+              "high_hz": 3592,
+              "signed_device_minus_km_db": 2.16,
+              "abs_db": 2.16
+            },
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 1.86,
+              "abs_db": 1.86
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 4.0,
+              "end_s": 4.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.05,
+              "abs_db": 2.05
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -1.87,
+              "abs_db": 1.87
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -1.99,
+              "abs_db": 1.99
+            },
+            {
+              "start_s": 3.0,
+              "end_s": 3.5,
+              "low_hz": 713,
+              "high_hz": 898,
+              "signed_device_minus_km_db": -1.5,
+              "abs_db": 1.5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "piece",
+      "label": "마지막 곡",
+      "start_s": 1910.0,
+      "end_s": 1915.0,
+      "display_anchor_db": {
+        "iphone": -5.647,
+        "s21": -2.747,
+        "h1": -0.922,
+        "d10": -5.485
+      },
+      "common_display_scale": 1.0,
+      "media": {
+        "km184": {
+          "audio": "oct4-piece-1910-km184.wav",
+          "spectrogram": "oct4-piece-1910-km184.png",
+          "web_spectrogram": "oct4-piece-1910-km184-web.png"
+        },
+        "iphone-raw": {
+          "audio": "oct4-piece-1910-iphone-raw.wav",
+          "spectrogram": "oct4-piece-1910-iphone-raw.png",
+          "web_spectrogram": "oct4-piece-1910-iphone-raw-web.png"
+        },
+        "iphone-after": {
+          "audio": "oct4-piece-1910-iphone-after.wav",
+          "spectrogram": "oct4-piece-1910-iphone-after.png",
+          "web_spectrogram": "oct4-piece-1910-iphone-after-web.png"
+        },
+        "s21-raw": {
+          "audio": "oct4-piece-1910-s21-raw.wav",
+          "spectrogram": "oct4-piece-1910-s21-raw.png",
+          "web_spectrogram": "oct4-piece-1910-s21-raw-web.png"
+        },
+        "s21-after": {
+          "audio": "oct4-piece-1910-s21-after.wav",
+          "spectrogram": "oct4-piece-1910-s21-after.png",
+          "web_spectrogram": "oct4-piece-1910-s21-after-web.png"
+        },
+        "h1-raw": {
+          "audio": "oct4-piece-1910-h1-raw.wav",
+          "spectrogram": "oct4-piece-1910-h1-raw.png",
+          "web_spectrogram": "oct4-piece-1910-h1-raw-web.png"
+        },
+        "h1-after": {
+          "audio": "oct4-piece-1910-h1-after.wav",
+          "spectrogram": "oct4-piece-1910-h1-after.png",
+          "web_spectrogram": "oct4-piece-1910-h1-after-web.png"
+        },
+        "d10-raw": {
+          "audio": "oct4-piece-1910-d10-raw.wav",
+          "spectrogram": "oct4-piece-1910-d10-raw.png",
+          "web_spectrogram": "oct4-piece-1910-d10-raw-web.png"
+        },
+        "d10-after": {
+          "audio": "oct4-piece-1910-d10-after.wav",
+          "spectrogram": "oct4-piece-1910-d10-after.png",
+          "web_spectrogram": "oct4-piece-1910-d10-after-web.png"
+        }
+      },
+      "residual_maps": {
+        "iphone": {
+          "before": "oct4-residual-piece-1910-iphone-before.png",
+          "after": "oct4-residual-piece-1910-iphone-after.png"
+        },
+        "s21": {
+          "before": "oct4-residual-piece-1910-s21-before.png",
+          "after": "oct4-residual-piece-1910-s21-after.png"
+        },
+        "h1": {
+          "before": "oct4-residual-piece-1910-h1-before.png",
+          "after": "oct4-residual-piece-1910-h1-after.png"
+        },
+        "d10": {
+          "before": "oct4-residual-piece-1910-d10-before.png",
+          "after": "oct4-residual-piece-1910-d10-after.png"
+        }
+      },
+      "hotspots": {
+        "iphone": {
+          "before": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -11.9,
+              "abs_db": 11.9
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -10.47,
+              "abs_db": 10.47
+            }
+          ],
+          "after": [
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": -8.21,
+              "abs_db": 8.21
+            },
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 898,
+              "high_hz": 1131,
+              "signed_device_minus_km_db": -7.05,
+              "abs_db": 7.05
+            }
+          ]
+        },
+        "s21": {
+          "before": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -6.86,
+              "abs_db": 6.86
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -6.86,
+              "abs_db": 6.86
+            }
+          ],
+          "after": [
+            {
+              "start_s": 0.0,
+              "end_s": 0.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -6.62,
+              "abs_db": 6.62
+            },
+            {
+              "start_s": 2.0,
+              "end_s": 2.5,
+              "low_hz": 1425,
+              "high_hz": 1796,
+              "signed_device_minus_km_db": -6.55,
+              "abs_db": 6.55
+            }
+          ]
+        },
+        "h1": {
+          "before": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.67,
+              "abs_db": 3.67
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.41,
+              "abs_db": 3.41
+            }
+          ],
+          "after": [
+            {
+              "start_s": 3.5,
+              "end_s": 4.0,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.6,
+              "abs_db": 2.6
+            },
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.32,
+              "abs_db": 2.32
+            }
+          ]
+        },
+        "d10": {
+          "before": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 3.32,
+              "abs_db": 3.32
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -2.17,
+              "abs_db": 2.17
+            }
+          ],
+          "after": [
+            {
+              "start_s": 1.0,
+              "end_s": 1.5,
+              "low_hz": 1131,
+              "high_hz": 1425,
+              "signed_device_minus_km_db": 2.69,
+              "abs_db": 2.69
+            },
+            {
+              "start_s": 0.5,
+              "end_s": 1.0,
+              "low_hz": 566,
+              "high_hz": 713,
+              "signed_device_minus_km_db": -2.27,
+              "abs_db": 2.27
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "visual_method": "Web spectrogram: 2048-point STFT, time 0-5s, log frequency 80-6000Hz; same 72dB display range across all nine versions. Residual map: Gaussian-smoothed device minus KM184 magnitude in dB, clipped +/-12dB, grey where either side is >58dB below common peak or outside 100-3200Hz. Hotspots: largest median signed residual across 0.5s x 1/3-oct cells with >=35% observed pixels; descriptive, not filter objective or proof of audibility."
+}

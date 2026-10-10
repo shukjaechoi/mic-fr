@@ -39,3 +39,6 @@ yarn-error.log*
 /outputs/
 /work/
 __pycache__/
+
+# Full-length local render; the Pages site uses short technique comparison clips.
+/docs/experiments/20261008-iphone-km184/october-iphone-guitar-corrected-48k-mono.wav

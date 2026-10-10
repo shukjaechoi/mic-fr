@@ -1,0 +1,318 @@
+{
+  "scope": "October matched technique clips; display-only anchor matching and common trio scale. Full selected SOS applied. The clip broad score shown in selection data was a leave-one-technique-out development score, not the fixed SOS clip score.",
+  "spectrogram": "2048-point STFT, same color ceiling and 72dB range within each trio, 80-6000Hz",
+  "clips": [
+    {
+      "group": "arpeggio",
+      "label": "아르페지오",
+      "start_s": 145.0,
+      "end_s": 150.0,
+      "group_windows": 22,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 5.2769,
+      "clip_loo_broad_mae_db": 3.2444,
+      "anchor_db": -7.714,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-arpeggio-0145-km184.wav",
+          "spectrogram": "oct-tech-arpeggio-0145-km184.png"
+        },
+        {
+          "audio": "oct-tech-arpeggio-0145-iphone.wav",
+          "spectrogram": "oct-tech-arpeggio-0145-iphone.png"
+        },
+        {
+          "audio": "oct-tech-arpeggio-0145-corrected.wav",
+          "spectrogram": "oct-tech-arpeggio-0145-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "complex",
+      "label": "복합 화음",
+      "start_s": 1699.0,
+      "end_s": 1704.0,
+      "group_windows": 19,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 5.4987,
+      "clip_loo_broad_mae_db": 4.2477,
+      "anchor_db": -6.922,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-complex-1699-km184.wav",
+          "spectrogram": "oct-tech-complex-1699-km184.png"
+        },
+        {
+          "audio": "oct-tech-complex-1699-iphone.wav",
+          "spectrogram": "oct-tech-complex-1699-iphone.png"
+        },
+        {
+          "audio": "oct-tech-complex-1699-corrected.wav",
+          "spectrogram": "oct-tech-complex-1699-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "dynamics",
+      "label": "다이내믹",
+      "start_s": 1158.0,
+      "end_s": 1163.0,
+      "group_windows": 20,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 4.2971,
+      "clip_loo_broad_mae_db": 2.8973,
+      "anchor_db": -5.121,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-dynamics-1158-km184.wav",
+          "spectrogram": "oct-tech-dynamics-1158-km184.png"
+        },
+        {
+          "audio": "oct-tech-dynamics-1158-iphone.wav",
+          "spectrogram": "oct-tech-dynamics-1158-iphone.png"
+        },
+        {
+          "audio": "oct-tech-dynamics-1158-corrected.wav",
+          "spectrogram": "oct-tech-dynamics-1158-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "glissando",
+      "label": "글리산도",
+      "start_s": 1812.0,
+      "end_s": 1817.0,
+      "group_windows": 4,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 4.0784,
+      "clip_loo_broad_mae_db": 2.3858,
+      "anchor_db": -6.209,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-glissando-1812-km184.wav",
+          "spectrogram": "oct-tech-glissando-1812-km184.png"
+        },
+        {
+          "audio": "oct-tech-glissando-1812-iphone.wav",
+          "spectrogram": "oct-tech-glissando-1812-iphone.png"
+        },
+        {
+          "audio": "oct-tech-glissando-1812-corrected.wav",
+          "spectrogram": "oct-tech-glissando-1812-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "open_notes",
+      "label": "개방현 단음",
+      "start_s": 273.0,
+      "end_s": 278.0,
+      "group_windows": 24,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 9.7098,
+      "clip_loo_broad_mae_db": 8.2287,
+      "anchor_db": -12.104,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-open_notes-0273-km184.wav",
+          "spectrogram": "oct-tech-open_notes-0273-km184.png"
+        },
+        {
+          "audio": "oct-tech-open_notes-0273-iphone.wav",
+          "spectrogram": "oct-tech-open_notes-0273-iphone.png"
+        },
+        {
+          "audio": "oct-tech-open_notes-0273-corrected.wav",
+          "spectrogram": "oct-tech-open_notes-0273-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "percussion",
+      "label": "퍼커션",
+      "start_s": 1782.0,
+      "end_s": 1787.0,
+      "group_windows": 6,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 4.3915,
+      "clip_loo_broad_mae_db": 2.9521,
+      "anchor_db": -1.269,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-percussion-1782-km184.wav",
+          "spectrogram": "oct-tech-percussion-1782-km184.png"
+        },
+        {
+          "audio": "oct-tech-percussion-1782-iphone.wav",
+          "spectrogram": "oct-tech-percussion-1782-iphone.png"
+        },
+        {
+          "audio": "oct-tech-percussion-1782-corrected.wav",
+          "spectrogram": "oct-tech-percussion-1782-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "rasgueado",
+      "label": "라스게아도",
+      "start_s": 1875.0,
+      "end_s": 1880.0,
+      "group_windows": 6,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 5.9483,
+      "clip_loo_broad_mae_db": 4.1938,
+      "anchor_db": -0.808,
+      "common_playback_scale": 0.990028,
+      "media": [
+        {
+          "audio": "oct-tech-rasgueado-1875-km184.wav",
+          "spectrogram": "oct-tech-rasgueado-1875-km184.png"
+        },
+        {
+          "audio": "oct-tech-rasgueado-1875-iphone.wav",
+          "spectrogram": "oct-tech-rasgueado-1875-iphone.png"
+        },
+        {
+          "audio": "oct-tech-rasgueado-1875-corrected.wav",
+          "spectrogram": "oct-tech-rasgueado-1875-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "scale",
+      "label": "스케일",
+      "start_s": 683.0,
+      "end_s": 688.0,
+      "group_windows": 23,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 7.0597,
+      "clip_loo_broad_mae_db": 5.1495,
+      "anchor_db": -7.552,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-scale-0683-km184.wav",
+          "spectrogram": "oct-tech-scale-0683-km184.png"
+        },
+        {
+          "audio": "oct-tech-scale-0683-iphone.wav",
+          "spectrogram": "oct-tech-scale-0683-iphone.png"
+        },
+        {
+          "audio": "oct-tech-scale-0683-corrected.wav",
+          "spectrogram": "oct-tech-scale-0683-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "slur",
+      "label": "슬러",
+      "start_s": 1303.0,
+      "end_s": 1308.0,
+      "group_windows": 18,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 8.8711,
+      "clip_loo_broad_mae_db": 6.9614,
+      "anchor_db": -6.454,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-slur-1303-km184.wav",
+          "spectrogram": "oct-tech-slur-1303-km184.png"
+        },
+        {
+          "audio": "oct-tech-slur-1303-iphone.wav",
+          "spectrogram": "oct-tech-slur-1303-iphone.png"
+        },
+        {
+          "audio": "oct-tech-slur-1303-corrected.wav",
+          "spectrogram": "oct-tech-slur-1303-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "strum",
+      "label": "스트로크",
+      "start_s": 221.0,
+      "end_s": 226.0,
+      "group_windows": 3,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 4.9704,
+      "clip_loo_broad_mae_db": 2.7367,
+      "anchor_db": -3.477,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-strum-0221-km184.wav",
+          "spectrogram": "oct-tech-strum-0221-km184.png"
+        },
+        {
+          "audio": "oct-tech-strum-0221-iphone.wav",
+          "spectrogram": "oct-tech-strum-0221-iphone.png"
+        },
+        {
+          "audio": "oct-tech-strum-0221-corrected.wav",
+          "spectrogram": "oct-tech-strum-0221-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "tremolo",
+      "label": "트레몰로",
+      "start_s": 1857.0,
+      "end_s": 1862.0,
+      "group_windows": 6,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 4.7242,
+      "clip_loo_broad_mae_db": 2.7414,
+      "anchor_db": -7.133,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-tremolo-1857-km184.wav",
+          "spectrogram": "oct-tech-tremolo-1857-km184.png"
+        },
+        {
+          "audio": "oct-tech-tremolo-1857-iphone.wav",
+          "spectrogram": "oct-tech-tremolo-1857-iphone.png"
+        },
+        {
+          "audio": "oct-tech-tremolo-1857-corrected.wav",
+          "spectrogram": "oct-tech-tremolo-1857-corrected.png"
+        }
+      ]
+    },
+    {
+      "group": "piece",
+      "label": "마지막 곡",
+      "start_s": 1910.0,
+      "end_s": 1915.0,
+      "group_windows": 13,
+      "representative_selection": "valid window closest to median low-only minus final-filter improvement within this group",
+      "clip_low_mae_db": 7.6816,
+      "clip_loo_broad_mae_db": 5.4303,
+      "anchor_db": -5.726,
+      "common_playback_scale": 1.0,
+      "media": [
+        {
+          "audio": "oct-tech-piece-1910-km184.wav",
+          "spectrogram": "oct-tech-piece-1910-km184.png"
+        },
+        {
+          "audio": "oct-tech-piece-1910-iphone.wav",
+          "spectrogram": "oct-tech-piece-1910-iphone.png"
+        },
+        {
+          "audio": "oct-tech-piece-1910-corrected.wav",
+          "spectrogram": "oct-tech-piece-1910-corrected.png"
+        }
+      ]
+    }
+  ]
+}
