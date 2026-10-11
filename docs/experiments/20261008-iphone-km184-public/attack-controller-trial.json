@@ -1,0 +1,589 @@
+{
+  "method": "Frozen shaped SOS + 5ms-block upper-band cut; one-block buffering (5ms) for current-block features and causal 50ms hold; max 2dB cut. Training excludes percussion and complex chord; existing SOS was previously exposed to October data, so this is a controlled development check, not independent validation.",
+  "bands_hz": {
+    "iphone": [
+      1600,
+      3200
+    ],
+    "s21": [
+      3200,
+      6000
+    ]
+  },
+  "models": {
+    "iphone": {
+      "band_hz": [
+        1600,
+        3200
+      ],
+      "trained_groups": [
+        "arpeggio",
+        "strum",
+        "open_notes",
+        "scale",
+        "dynamics",
+        "slur",
+        "glissando",
+        "tremolo",
+        "rasgueado"
+      ],
+      "trained_attack_blocks": 18239,
+      "feature_mean": [
+        -20.85840943705577,
+        -39.311652856438315,
+        -45.225208297779254,
+        -5.913555441341014,
+        2.6535518880471995,
+        1.9058937760756234
+      ],
+      "feature_std": [
+        6.7116759809354285,
+        7.7004205442171285,
+        9.029846964361393,
+        5.295009633328114,
+        7.547292147242214,
+        7.075060881372538
+      ],
+      "mlp": [
+        {
+          "weight": [
+            [
+              0.1109251156449318,
+              -0.018297266215085983,
+              -0.0483594574034214,
+              0.5705006122589111,
+              -0.1202528104186058,
+              -0.13196904957294464
+            ],
+            [
+              0.35591280460357666,
+              0.7922156453132629,
+              0.12539419531822205,
+              -0.6261353492736816,
+              -0.24215556681156158,
+              -0.05223381146788597
+            ],
+            [
+              0.027292411774396896,
+              -0.14952608942985535,
+              0.5179982781410217,
+              0.2037704735994339,
+              -0.03627840429544449,
+              0.007641823962330818
+            ],
+            [
+              -0.011009769514203072,
+              0.3486870527267456,
+              -0.3614700734615326,
+              -0.2532700300216675,
+              -0.0856502577662468,
+              0.4122365713119507
+            ],
+            [
+              -0.2287338227033615,
+              0.0659237802028656,
+              -0.15751929581165314,
+              -0.4165514409542084,
+              -0.3329329192638397,
+              -0.8709431886672974
+            ],
+            [
+              0.13781194388866425,
+              -0.6270849108695984,
+              0.5236572623252869,
+              0.31845393776893616,
+              -0.15659473836421967,
+              -0.013271680101752281
+            ],
+            [
+              -0.20943687856197357,
+              0.4935140609741211,
+              0.0748046487569809,
+              -0.13752247393131256,
+              -0.016063712537288666,
+              0.3014658987522125
+            ],
+            [
+              0.03928449749946594,
+              -0.11197800934314728,
+              -0.10239056497812271,
+              -0.4604789912700653,
+              0.0133354552090168,
+              0.02108537219464779
+            ],
+            [
+              0.24698232114315033,
+              -0.4962199926376343,
+              -0.255625456571579,
+              0.0293322391808033,
+              -0.44071081280708313,
+              0.36390963196754456
+            ],
+            [
+              -0.16840818524360657,
+              -0.04098528251051903,
+              0.416133850812912,
+              0.24277518689632416,
+              0.18632256984710693,
+              -0.2675301730632782
+            ],
+            [
+              0.22446192800998688,
+              -0.12923450767993927,
+              -0.1949882060289383,
+              -0.38052910566329956,
+              0.16652314364910126,
+              -0.11215780675411224
+            ],
+            [
+              0.3931363821029663,
+              0.034039705991744995,
+              -0.4447128176689148,
+              -0.48850834369659424,
+              0.07542920112609863,
+              0.07943407446146011
+            ]
+          ],
+          "bias": [
+            0.214182510972023,
+            -0.253008633852005,
+            -0.6404388546943665,
+            -0.14487265050411224,
+            -0.09388667345046997,
+            -0.05086790397763252,
+            0.13609109818935394,
+            0.5478379726409912,
+            -0.42056116461753845,
+            -0.49878403544425964,
+            0.44027575850486755,
+            0.10216410458087921
+          ]
+        },
+        {
+          "weight": [
+            [
+              0.29251253604888916,
+              -0.35447564721107483,
+              0.43714603781700134,
+              -0.3161981701850891,
+              -0.4126415252685547,
+              0.3726240396499634,
+              -0.12478703260421753,
+              -0.2999193072319031,
+              0.36646807193756104,
+              0.4899100065231323,
+              -0.4617086946964264,
+              -0.4051375985145569
+            ]
+          ],
+          "bias": [
+            0.06703509390354156
+          ]
+        }
+      ],
+      "max_cut_db": -2,
+      "simple_dynamic_cut_db": -2
+    },
+    "s21": {
+      "band_hz": [
+        3200,
+        6000
+      ],
+      "trained_groups": [
+        "arpeggio",
+        "strum",
+        "open_notes",
+        "scale",
+        "dynamics",
+        "slur",
+        "glissando",
+        "tremolo",
+        "rasgueado"
+      ],
+      "trained_attack_blocks": 13341,
+      "feature_mean": [
+        -24.872056563437642,
+        -41.99844638649738,
+        -53.476490678212635,
+        -11.478044291715062,
+        3.296901385152849,
+        2.1264088263446315
+      ],
+      "feature_std": [
+        6.6100677224518165,
+        7.926794913731,
+        9.114535066445706,
+        7.837221806009151,
+        8.354068084048345,
+        9.695024342774687
+      ],
+      "mlp": [
+        {
+          "weight": [
+            [
+              0.12503361701965332,
+              0.12724827229976654,
+              -0.33139923214912415,
+              0.558957576751709,
+              -0.05550263449549675,
+              0.003984278533607721
+            ],
+            [
+              -0.20231357216835022,
+              0.7815737724304199,
+              0.4544960856437683,
+              -0.532416820526123,
+              0.06950772553682327,
+              0.009634828194975853
+            ],
+            [
+              0.6514708399772644,
+              -0.10304902493953705,
+              0.3259231746196747,
+              0.08568119257688522,
+              0.3748823404312134,
+              0.22356952726840973
+            ],
+            [
+              -0.09249389916658401,
+              0.2785234749317169,
+              -0.1210123673081398,
+              -0.2384006530046463,
+              -0.13275127112865448,
+              0.30128374695777893
+            ],
+            [
+              -0.2818196415901184,
+              0.01522903423756361,
+              0.10432154685258865,
+              -0.4270392954349518,
+              0.06454616785049438,
+              -0.4784737229347229
+            ],
+            [
+              0.3267521560192108,
+              -0.5995329022407532,
+              -0.09750525653362274,
+              0.22170984745025635,
+              0.009895951487123966,
+              -0.055784277617931366
+            ],
+            [
+              0.14431461691856384,
+              0.24791117012500763,
+              0.10953652113676071,
+              -0.05038953199982643,
+              0.09988667815923691,
+              -0.21872420608997345
+            ],
+            [
+              0.24033108353614807,
+              0.5184895992279053,
+              0.42731112241744995,
+              -0.3133945167064667,
+              0.24540938436985016,
+              0.3255586326122284
+            ],
+            [
+              0.08074691146612167,
+              -0.39419275522232056,
+              -0.6400977969169617,
+              -0.04741036519408226,
+              -0.1430509388446808,
+              0.2875102758407593
+            ],
+            [
+              0.10151755064725876,
+              0.0009094609995372593,
+              0.26212576031684875,
+              0.15099366009235382,
+              0.36154621839523315,
+              -0.27063170075416565
+            ],
+            [
+              0.11912423372268677,
+              -0.13194122910499573,
+              -0.03853263333439827,
+              -0.2953545153141022,
+              -0.021625014021992683,
+              -0.15211522579193115
+            ],
+            [
+              0.6208502650260925,
+              -0.032101765275001526,
+              -0.4105498492717743,
+              -0.4829144775867462,
+              0.1782059520483017,
+              -0.1538005918264389
+            ]
+          ],
+          "bias": [
+            0.5818646550178528,
+            -0.5598392486572266,
+            -0.2795291244983673,
+            -0.5096879601478577,
+            -0.459259957075119,
+            0.3510723114013672,
+            0.3065357804298401,
+            0.18689846992492676,
+            -0.04710414260625839,
+            -0.1304120570421219,
+            0.05783628672361374,
+            -0.34387341141700745
+          ]
+        },
+        {
+          "weight": [
+            [
+              0.39305490255355835,
+              -0.2982911467552185,
+              0.10812314599752426,
+              -0.43741753697395325,
+              -0.38944515585899353,
+              0.31880995631217957,
+              0.18937867879867554,
+              -0.012893455103039742,
+              0.07271070033311844,
+              0.06218559294939041,
+              -0.06140681728720665,
+              -0.3670237064361572
+            ]
+          ],
+          "bias": [
+            0.4471983015537262
+          ]
+        }
+      ],
+      "max_cut_db": -2,
+      "simple_dynamic_cut_db": -2
+    }
+  },
+  "clips": [
+    {
+      "group": "open_notes",
+      "start_s": 418,
+      "device": "iphone",
+      "gated_blocks": 0,
+      "neural_mean_cut_db_on_gate": 0,
+      "media": {
+        "km184": {
+          "audio": "attack-open_notes-418-iphone-km184.wav",
+          "spectrogram": "attack-open_notes-418-iphone-km184.png"
+        },
+        "shaped": {
+          "audio": "attack-open_notes-418-iphone-shaped.wav",
+          "spectrogram": "attack-open_notes-418-iphone-shaped.png",
+          "residual": "attack-open_notes-418-iphone-shaped-error.png"
+        },
+        "dynamic": {
+          "audio": "attack-open_notes-418-iphone-dynamic.wav",
+          "spectrogram": "attack-open_notes-418-iphone-dynamic.png",
+          "residual": "attack-open_notes-418-iphone-dynamic-error.png"
+        },
+        "neural": {
+          "audio": "attack-open_notes-418-iphone-neural.wav",
+          "spectrogram": "attack-open_notes-418-iphone-neural.png",
+          "residual": "attack-open_notes-418-iphone-neural-error.png"
+        },
+        "raw": {
+          "audio": "attack-open_notes-418-iphone-raw.wav",
+          "spectrogram": "attack-open_notes-418-iphone-raw.png",
+          "residual": "attack-open_notes-418-iphone-raw-error.png"
+        }
+      }
+    },
+    {
+      "group": "complex",
+      "start_s": 1704,
+      "device": "iphone",
+      "gated_blocks": 340,
+      "neural_mean_cut_db_on_gate": -0.1566319614648819,
+      "media": {
+        "km184": {
+          "audio": "attack-complex-1704-iphone-km184.wav",
+          "spectrogram": "attack-complex-1704-iphone-km184.png"
+        },
+        "shaped": {
+          "audio": "attack-complex-1704-iphone-shaped.wav",
+          "spectrogram": "attack-complex-1704-iphone-shaped.png",
+          "residual": "attack-complex-1704-iphone-shaped-error.png"
+        },
+        "dynamic": {
+          "audio": "attack-complex-1704-iphone-dynamic.wav",
+          "spectrogram": "attack-complex-1704-iphone-dynamic.png",
+          "residual": "attack-complex-1704-iphone-dynamic-error.png"
+        },
+        "neural": {
+          "audio": "attack-complex-1704-iphone-neural.wav",
+          "spectrogram": "attack-complex-1704-iphone-neural.png",
+          "residual": "attack-complex-1704-iphone-neural-error.png"
+        },
+        "raw": {
+          "audio": "attack-complex-1704-iphone-raw.wav",
+          "spectrogram": "attack-complex-1704-iphone-raw.png",
+          "residual": "attack-complex-1704-iphone-raw-error.png"
+        }
+      }
+    },
+    {
+      "group": "percussion",
+      "start_s": 1792,
+      "device": "iphone",
+      "gated_blocks": 27,
+      "neural_mean_cut_db_on_gate": -1.207774043083191,
+      "media": {
+        "km184": {
+          "audio": "attack-percussion-1792-iphone-km184.wav",
+          "spectrogram": "attack-percussion-1792-iphone-km184.png"
+        },
+        "shaped": {
+          "audio": "attack-percussion-1792-iphone-shaped.wav",
+          "spectrogram": "attack-percussion-1792-iphone-shaped.png",
+          "residual": "attack-percussion-1792-iphone-shaped-error.png"
+        },
+        "dynamic": {
+          "audio": "attack-percussion-1792-iphone-dynamic.wav",
+          "spectrogram": "attack-percussion-1792-iphone-dynamic.png",
+          "residual": "attack-percussion-1792-iphone-dynamic-error.png"
+        },
+        "neural": {
+          "audio": "attack-percussion-1792-iphone-neural.wav",
+          "spectrogram": "attack-percussion-1792-iphone-neural.png",
+          "residual": "attack-percussion-1792-iphone-neural-error.png"
+        },
+        "raw": {
+          "audio": "attack-percussion-1792-iphone-raw.wav",
+          "spectrogram": "attack-percussion-1792-iphone-raw.png",
+          "residual": "attack-percussion-1792-iphone-raw-error.png"
+        }
+      },
+      "attack_excess_db": [
+        {
+          "shaped": 2.716602504036033,
+          "dynamic": 2.0102842340759826,
+          "neural": 2.4213389959318827,
+          "raw": 8.710580487810711
+        },
+        {
+          "shaped": 2.056710249661703,
+          "dynamic": 1.1677366719509295,
+          "neural": 1.2375127623781825,
+          "raw": 8.476260207783492
+        }
+      ]
+    },
+    {
+      "group": "open_notes",
+      "start_s": 418,
+      "device": "s21",
+      "gated_blocks": 0,
+      "neural_mean_cut_db_on_gate": 0,
+      "media": {
+        "km184": {
+          "audio": "attack-open_notes-418-s21-km184.wav",
+          "spectrogram": "attack-open_notes-418-s21-km184.png"
+        },
+        "shaped": {
+          "audio": "attack-open_notes-418-s21-shaped.wav",
+          "spectrogram": "attack-open_notes-418-s21-shaped.png",
+          "residual": "attack-open_notes-418-s21-shaped-error.png"
+        },
+        "dynamic": {
+          "audio": "attack-open_notes-418-s21-dynamic.wav",
+          "spectrogram": "attack-open_notes-418-s21-dynamic.png",
+          "residual": "attack-open_notes-418-s21-dynamic-error.png"
+        },
+        "neural": {
+          "audio": "attack-open_notes-418-s21-neural.wav",
+          "spectrogram": "attack-open_notes-418-s21-neural.png",
+          "residual": "attack-open_notes-418-s21-neural-error.png"
+        },
+        "raw": {
+          "audio": "attack-open_notes-418-s21-raw.wav",
+          "spectrogram": "attack-open_notes-418-s21-raw.png",
+          "residual": "attack-open_notes-418-s21-raw-error.png"
+        }
+      }
+    },
+    {
+      "group": "complex",
+      "start_s": 1704,
+      "device": "s21",
+      "gated_blocks": 193,
+      "neural_mean_cut_db_on_gate": -1.0969130992889404,
+      "media": {
+        "km184": {
+          "audio": "attack-complex-1704-s21-km184.wav",
+          "spectrogram": "attack-complex-1704-s21-km184.png"
+        },
+        "shaped": {
+          "audio": "attack-complex-1704-s21-shaped.wav",
+          "spectrogram": "attack-complex-1704-s21-shaped.png",
+          "residual": "attack-complex-1704-s21-shaped-error.png"
+        },
+        "dynamic": {
+          "audio": "attack-complex-1704-s21-dynamic.wav",
+          "spectrogram": "attack-complex-1704-s21-dynamic.png",
+          "residual": "attack-complex-1704-s21-dynamic-error.png"
+        },
+        "neural": {
+          "audio": "attack-complex-1704-s21-neural.wav",
+          "spectrogram": "attack-complex-1704-s21-neural.png",
+          "residual": "attack-complex-1704-s21-neural-error.png"
+        },
+        "raw": {
+          "audio": "attack-complex-1704-s21-raw.wav",
+          "spectrogram": "attack-complex-1704-s21-raw.png",
+          "residual": "attack-complex-1704-s21-raw-error.png"
+        }
+      }
+    },
+    {
+      "group": "percussion",
+      "start_s": 1792,
+      "device": "s21",
+      "gated_blocks": 26,
+      "neural_mean_cut_db_on_gate": -1.6760367155075073,
+      "media": {
+        "km184": {
+          "audio": "attack-percussion-1792-s21-km184.wav",
+          "spectrogram": "attack-percussion-1792-s21-km184.png"
+        },
+        "shaped": {
+          "audio": "attack-percussion-1792-s21-shaped.wav",
+          "spectrogram": "attack-percussion-1792-s21-shaped.png",
+          "residual": "attack-percussion-1792-s21-shaped-error.png"
+        },
+        "dynamic": {
+          "audio": "attack-percussion-1792-s21-dynamic.wav",
+          "spectrogram": "attack-percussion-1792-s21-dynamic.png",
+          "residual": "attack-percussion-1792-s21-dynamic-error.png"
+        },
+        "neural": {
+          "audio": "attack-percussion-1792-s21-neural.wav",
+          "spectrogram": "attack-percussion-1792-s21-neural.png",
+          "residual": "attack-percussion-1792-s21-neural-error.png"
+        },
+        "raw": {
+          "audio": "attack-percussion-1792-s21-raw.wav",
+          "spectrogram": "attack-percussion-1792-s21-raw.png",
+          "residual": "attack-percussion-1792-s21-raw-error.png"
+        }
+      },
+      "attack_excess_db": [
+        {
+          "shaped": 5.286537468315312,
+          "dynamic": 4.993331195191489,
+          "neural": 5.045670089617728,
+          "raw": 6.7558413535364465
+        },
+        {
+          "shaped": 2.230532738368933,
+          "dynamic": 1.8134509136239323,
+          "neural": 1.8397240550657712,
+          "raw": 3.355877211316867
+        }
+      ]
+    }
+  ]
+}
