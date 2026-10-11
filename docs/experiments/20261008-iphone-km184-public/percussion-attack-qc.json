@@ -1,0 +1,227 @@
+{
+  "scope": "The two selected percussion hits within KM184 1792–1797s; October pair only",
+  "method": "KM184 >700Hz 10ms RMS local peaks; attack window peak−10ms to peak+50ms. Third-order Butterworth bandpass RMS at 800–1600, 1600–3200 and 3200–6000Hz. Device upper/lower dB ratio minus KM184 upper/lower dB ratio. Same two hit times and comparison scale for every variant.",
+  "cautions": [
+    "Two hits are too few to generalize to the whole percussion technique.",
+    "Peak-centered 60ms windows are not manually verified physical onsets.",
+    "This is a relative attack-band balance, not overall spectrum, loudness or proof of audible causation."
+  ],
+  "peak_times_within_clip_s": [
+    0.42,
+    2.91
+  ],
+  "devices": {
+    "iphone": {
+      "raw": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              -4.995,
+              5.166,
+              0.044
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 10.162,
+            "upper_3200_6000_relative_to_800_1600_db": 5.039
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              -2.916,
+              3.442,
+              -2.932
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 6.357,
+            "upper_3200_6000_relative_to_800_1600_db": -0.016
+          }
+        ],
+        "median_1600_3200_relative_db": 8.26,
+        "median_3200_6000_relative_db": 2.511
+      },
+      "baseline": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              -1.962,
+              3.811,
+              -0.911
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 5.773,
+            "upper_3200_6000_relative_to_800_1600_db": 1.051
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              -0.475,
+              1.083,
+              -3.732
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 1.559,
+            "upper_3200_6000_relative_to_800_1600_db": -3.257
+          }
+        ],
+        "median_1600_3200_relative_db": 3.666,
+        "median_3200_6000_relative_db": -1.103
+      },
+      "broad_cut": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              -3.02,
+              2.762,
+              -1.185
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 5.781,
+            "upper_3200_6000_relative_to_800_1600_db": 1.835
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              -1.504,
+              0.315,
+              -3.96
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 1.819,
+            "upper_3200_6000_relative_to_800_1600_db": -2.456
+          }
+        ],
+        "median_1600_3200_relative_db": 3.8,
+        "median_3200_6000_relative_db": -0.31
+      },
+      "shaped": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              -0.754,
+              3.227,
+              -1.214
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 3.981,
+            "upper_3200_6000_relative_to_800_1600_db": -0.46
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              0.605,
+              -0.016,
+              -3.977
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": -0.621,
+            "upper_3200_6000_relative_to_800_1600_db": -4.582
+          }
+        ],
+        "median_1600_3200_relative_db": 1.68,
+        "median_3200_6000_relative_db": -2.521
+      }
+    },
+    "s21": {
+      "raw": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              0.155,
+              3.61,
+              10.152
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 3.455,
+            "upper_3200_6000_relative_to_800_1600_db": 9.997
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              0.76,
+              1.642,
+              6.407
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 0.883,
+            "upper_3200_6000_relative_to_800_1600_db": 5.648
+          }
+        ],
+        "median_1600_3200_relative_db": 2.169,
+        "median_3200_6000_relative_db": 7.822
+      },
+      "baseline": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              0.119,
+              3.258,
+              9.965
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 3.139,
+            "upper_3200_6000_relative_to_800_1600_db": 9.846
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              0.585,
+              1.065,
+              6.167
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 0.48,
+            "upper_3200_6000_relative_to_800_1600_db": 5.582
+          }
+        ],
+        "median_1600_3200_relative_db": 1.809,
+        "median_3200_6000_relative_db": 7.714
+      },
+      "broad_cut": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              -1.004,
+              2.294,
+              9.788
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 3.297,
+            "upper_3200_6000_relative_to_800_1600_db": 10.791
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              -0.446,
+              0.424,
+              5.949
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 0.87,
+            "upper_3200_6000_relative_to_800_1600_db": 6.395
+          }
+        ],
+        "median_1600_3200_relative_db": 2.083,
+        "median_3200_6000_relative_db": 8.593
+      },
+      "shaped": {
+        "events": [
+          {
+            "time_s": 0.42,
+            "device_minus_km_db": [
+              0.966,
+              2.763,
+              9.535
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": 1.798,
+            "upper_3200_6000_relative_to_800_1600_db": 8.569
+          },
+          {
+            "time_s": 2.91,
+            "device_minus_km_db": [
+              1.218,
+              -0.244,
+              5.614
+            ],
+            "upper_1600_3200_relative_to_800_1600_db": -1.462,
+            "upper_3200_6000_relative_to_800_1600_db": 4.396
+          }
+        ],
+        "median_1600_3200_relative_db": 0.168,
+        "median_3200_6000_relative_db": 6.482
+      }
+    }
+  }
+}
