@@ -28,7 +28,9 @@ for d in ('s21','h1','d10'):
         estimates.append(signal.welch(x,FS,nperseg=8192,noverlap=4096)[1])
     floor_psd[d]=np.median(estimates,axis=0)
 freq=np.fft.rfftfreq(8192,1/FS)
-band_slices=[(freq>=lo)&(freq<hi) for lo,hi in ((800,1600),(1600,3200),(3200,6000))]
+full_bands=((100,200),(200,400),(400,800),(800,1600),(1600,3200),(3200,6000))
+band_widths=np.asarray([hi-lo for lo,hi in full_bands],float)
+band_slices=[(freq>=lo)&(freq<hi) for lo,hi in full_bands]
 floor_bands={d:np.array([np.mean(f[b]) for b in band_slices]) for d,f in floor_psd.items()}
 events=[('open_notes',242.315),('open_notes',363.485),
         ('arpeggio',102.425),('arpeggio',102.875),('arpeggio',103.450),
@@ -52,10 +54,11 @@ def spectrum_metrics(y):
     f,p=signal.periodogram(y,FS,window='hann',nfft=8192,scaling='density')
     p=p+1e-20
     def energy(lo,hi): return float(np.mean(p[(f>=lo)&(f<hi)]))
-    e0,e1,e2=energy(800,1600),energy(1600,3200),energy(3200,6000)
+    all_band_psd=[energy(lo,hi) for lo,hi in full_bands]
+    e0,e1,e2=all_band_psd[3:]
     sel=(f>=800)&(f<6000)
     db=10*np.log10(p[sel])
-    return {'band_psd':[e0,e1,e2],
+    return {'band_psd':all_band_psd,
             'upper_16_32_over_08_16_db':round(10*np.log10(e1/e0),3),
             'upper_32_60_over_08_16_db':round(10*np.log10(e2/e0),3),
             'peak_background_contrast_db':round(float(np.percentile(db,90)-np.percentile(db,50)),3)}
@@ -80,15 +83,16 @@ for group,t in events:
             records[d]['variants'][v]=metrics
     rows.append({'group':group,'km184_peak_time_s':t,'devices':records})
 
-def confidence(km,dev,metric):
-    bins={'upper_16_32_over_08_16_db':(0,1),'upper_32_60_over_08_16_db':(0,2),
-          'peak_background_contrast_db':(0,1,2)}[metric]
+def confidence(km,dev,metric,fade_db=36):
+    bins={'upper_16_32_over_08_16_db':(3,4),'upper_32_60_over_08_16_db':(3,5),
+          'peak_background_contrast_db':(3,4,5)}[metric]
     snr=min(*(km['band_snr_db'][i] for i in bins),*(dev['band_snr_db'][i] for i in bins))
     kp=np.asarray(km['band_psd']);dp=np.asarray(dev['band_psd'])
     # A ratio or contrast involving a weak band receives less decision weight,
     # even if that band is measurable above the acoustic background.
-    strength=min(max(10*np.log10(kp[i]/max(kp)),10*np.log10(dp[i]/max(dp))) for i in bins)
-    importance=float(.2+.8*np.clip((strength+12)/12,0,1))
+    ke=kp*band_widths;de=dp*band_widths
+    strength=min(max(10*np.log10(ke[i]/max(ke)),10*np.log10(de[i]/max(de))) for i in bins)
+    importance=float(.2+.8*np.clip((strength+fade_db)/(fade_db-12),0,1))
     return round(float(np.clip((snr-10)/15,0,1)*importance),3),round(float(snr),2)
 
 for row in rows:
@@ -128,9 +132,28 @@ payload={'scope':'October 2, matched guitar events in four labeled groups, 10 ev
          'time_alignment':'Affine sample clock map followed by each device local >700Hz 10ms RMS peak within ±70ms; local peak is not certified physical onset.',
          'stages_ms':{'attack':[0,40],'body':[40,150],'tail':[150,300]},
          'metrics':'Band power ratios are dB and invariant to overall gain. Peak/background contrast is 90th minus 50th percentile of log FFT power over 800–6000Hz; it is spectral concentration, not certified harmonicity. Tail may include the next arpeggio note.',
-         'confidence':'For each event-stage, both KM184 and device raw band PSD must exceed their October background proxy by 10dB in every band used by the metric. Above that, observability weight rises linearly from 0 to 1 across 10–25dB minimum joint SNR. Relevance weight is 1 when every required band is within 12dB of the strongest of the three bands in at least one recorder and fades to 0.2 for weaker but still observed bands; high-SNR weak bands are not hidden. The product weights the comparison. Same raw-derived weight is used for pre/post EQ. Weighted means exclude zero-weight events; null means insufficient coverage. Background is a recorded acoustic proxy, not microphone self-noise.',
+         'confidence':'For each event-stage, both KM184 and device raw band PSD must exceed their October background proxy by 10dB in every band used by the metric. Above that, observability weight rises linearly from 0 to 1 across 10–25dB minimum joint SNR. Relevance compares band total energy (mean PSD × bandwidth) against the strongest of six non-overlapping 100–6000Hz bands in at least one recorder, not merely the upper bands: weight is 1 within 12dB and fades to 0.2 by 36dB below the strongest. Thus weaker but clearly observed upper components remain visible with reduced decision weight. The product weights the comparison. Same raw-derived weight is used for pre/post EQ. Weighted means exclude zero-weight events; null means insufficient coverage. Background is a recorded acoustic proxy, not microphone self-noise.',
          'cautions':['Pitched and percussive events differ; do not call percussive peaks harmonics.','Source/microphone distance, direction, room and phone processing differ.','An EQ-induced ratio change does not demonstrate perceptual improvement.','Sparse events, especially arpeggio/percussion, do not establish generality.'],
          'events':rows,'summary':summary}
+sensitivity={}
+for group,d,stage,key in (('arpeggio','iphone','attack','upper_16_32_over_08_16_db'),
+                          ('complex','iphone','body','upper_16_32_over_08_16_db'),
+                          ('arpeggio','s21','attack','upper_32_60_over_08_16_db')):
+    rr=[r for r in rows if r['group']==group]
+    case=f'{group}/{d}/{stage}/{key}'
+    sensitivity[case]={}
+    for taper in (24,36,48):
+        weights=[];values={'raw':[],'fixed_eq':[]}
+        for r in rr:
+            km=r['devices']['km184']['variants']['raw'][stage]
+            raw=r['devices'][d]['variants']['raw'][stage]
+            weights.append(confidence(km,raw,key,taper)[0])
+            for variant in values:
+                values[variant].append(r['devices'][d]['variants'][variant][stage][key]-km[key])
+        good=np.asarray(weights)>0
+        sensitivity[case][str(taper)]={variant:round(float(np.average(np.asarray(vals)[good],weights=np.asarray(weights)[good])),3)
+                                       if np.any(good) else None for variant,vals in values.items()}
+payload['relevance_taper_sensitivity_db']=sensitivity
 (OUT/'joint-event-timbre-qc.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
 for g in summary:
     print(g,len([r for r in rows if r['group']==g]))
