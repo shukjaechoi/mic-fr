@@ -1,0 +1,3273 @@
+{
+  "scope": "October 2, matched guitar events in four labeled groups, 10 events from one session. Descriptive hypothesis check only.",
+  "time_alignment": "Affine sample clock map followed by each device local >700Hz 10ms RMS peak within ±70ms; local peak is not certified physical onset.",
+  "stages_ms": {
+    "attack": [
+      0,
+      40
+    ],
+    "body": [
+      40,
+      150
+    ],
+    "tail": [
+      150,
+      300
+    ]
+  },
+  "metrics": "Band power ratios are dB and invariant to overall gain. Peak/background contrast is 90th minus 50th percentile of log FFT power over 800–6000Hz; it is spectral concentration, not certified harmonicity. Tail may include the next arpeggio note.",
+  "cautions": [
+    "Pitched and percussive events differ; do not call percussive peaks harmonics.",
+    "Source/microphone distance, direction, room and phone processing differ.",
+    "An EQ-induced ratio change does not demonstrate perceptual improvement.",
+    "Sparse events, especially arpeggio/percussion, do not establish generality."
+  ],
+  "events": [
+    {
+      "group": "open_notes",
+      "km184_peak_time_s": 242.315,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": -1.06,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.56,
+                "upper_32_60_over_08_16_db": -23.121,
+                "peak_background_contrast_db": 28.369
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.555,
+                "upper_32_60_over_08_16_db": -24.744,
+                "peak_background_contrast_db": 27.288
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -6.57,
+                "upper_32_60_over_08_16_db": -24.328,
+                "peak_background_contrast_db": 20.102
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": -15.19,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -2.21,
+                "upper_32_60_over_08_16_db": -22.127,
+                "peak_background_contrast_db": 26.147
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -1.58,
+                "upper_32_60_over_08_16_db": -26.044,
+                "peak_background_contrast_db": 22.792
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -1.132,
+                "upper_32_60_over_08_16_db": -28.307,
+                "peak_background_contrast_db": 18.955
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -10.358,
+                "upper_32_60_over_08_16_db": -28.786,
+                "peak_background_contrast_db": 25.708
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.471,
+                "upper_32_60_over_08_16_db": -32.566,
+                "peak_background_contrast_db": 23.59
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -7.988,
+                "upper_32_60_over_08_16_db": -34.771,
+                "peak_background_contrast_db": 19.889
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": 4.94,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.906,
+                "upper_32_60_over_08_16_db": -19.189,
+                "peak_background_contrast_db": 31.746
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -7.783,
+                "upper_32_60_over_08_16_db": -19.496,
+                "peak_background_contrast_db": 25.113
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -4.798,
+                "upper_32_60_over_08_16_db": -17.564,
+                "peak_background_contrast_db": 19.624
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.029,
+                "upper_32_60_over_08_16_db": -20.626,
+                "peak_background_contrast_db": 31.023
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -8.812,
+                "upper_32_60_over_08_16_db": -20.902,
+                "peak_background_contrast_db": 25.848
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -5.618,
+                "upper_32_60_over_08_16_db": -19.206,
+                "peak_background_contrast_db": 20.208
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -4.58,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -10.904,
+                "upper_32_60_over_08_16_db": -24.508,
+                "peak_background_contrast_db": 27.474
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.174,
+                "upper_32_60_over_08_16_db": -24.844,
+                "peak_background_contrast_db": 21.901
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -6.296,
+                "upper_32_60_over_08_16_db": -25.411,
+                "peak_background_contrast_db": 19.123
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -23.44,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -4.281,
+                "upper_32_60_over_08_16_db": -21.436,
+                "peak_background_contrast_db": 26.97
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -3.882,
+                "upper_32_60_over_08_16_db": -23.485,
+                "peak_background_contrast_db": 22.063
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -3.198,
+                "upper_32_60_over_08_16_db": -24.922,
+                "peak_background_contrast_db": 20.448
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "open_notes",
+      "km184_peak_time_s": 363.485,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": -5.96,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -7.226,
+                "upper_32_60_over_08_16_db": -18.968,
+                "peak_background_contrast_db": 26.532
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -7.843,
+                "upper_32_60_over_08_16_db": -20.744,
+                "peak_background_contrast_db": 26.272
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -11.297,
+                "upper_32_60_over_08_16_db": -24.37,
+                "peak_background_contrast_db": 17.637
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": 1.25,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -0.749,
+                "upper_32_60_over_08_16_db": -14.996,
+                "peak_background_contrast_db": 26.626
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -5.206,
+                "upper_32_60_over_08_16_db": -17.633,
+                "peak_background_contrast_db": 19.955
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -8.457,
+                "upper_32_60_over_08_16_db": -24.771,
+                "peak_background_contrast_db": 14.072
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -8.961,
+                "upper_32_60_over_08_16_db": -21.343,
+                "peak_background_contrast_db": 26.209
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -13.088,
+                "upper_32_60_over_08_16_db": -24.088,
+                "peak_background_contrast_db": 21.158
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -16.726,
+                "upper_32_60_over_08_16_db": -31.702,
+                "peak_background_contrast_db": 18.088
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": 5.98,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.564,
+                "upper_32_60_over_08_16_db": -17.809,
+                "peak_background_contrast_db": 30.758
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.372,
+                "upper_32_60_over_08_16_db": -20.239,
+                "peak_background_contrast_db": 25.763
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -11.514,
+                "upper_32_60_over_08_16_db": -25.715,
+                "peak_background_contrast_db": 16.405
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.195,
+                "upper_32_60_over_08_16_db": -19.471,
+                "peak_background_contrast_db": 30.575
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -10.374,
+                "upper_32_60_over_08_16_db": -21.879,
+                "peak_background_contrast_db": 26.773
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -12.002,
+                "upper_32_60_over_08_16_db": -27.187,
+                "peak_background_contrast_db": 16.562
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -11.88,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -7.445,
+                "upper_32_60_over_08_16_db": -18.813,
+                "peak_background_contrast_db": 26.532
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.03,
+                "upper_32_60_over_08_16_db": -23.015,
+                "peak_background_contrast_db": 23.359
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -12.046,
+                "upper_32_60_over_08_16_db": -27.029,
+                "peak_background_contrast_db": 16.323
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -4.88,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -7.824,
+                "upper_32_60_over_08_16_db": -24.833,
+                "peak_background_contrast_db": 27.841
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -8.46,
+                "upper_32_60_over_08_16_db": -27.771,
+                "peak_background_contrast_db": 26.252
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -10.784,
+                "upper_32_60_over_08_16_db": -32.047,
+                "peak_background_contrast_db": 16.67
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "arpeggio",
+      "km184_peak_time_s": 102.425,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": -6.46,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.84,
+                "upper_32_60_over_08_16_db": -20.92,
+                "peak_background_contrast_db": 18.11
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.607,
+                "upper_32_60_over_08_16_db": -32.245,
+                "peak_background_contrast_db": 23.199
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.347,
+                "upper_32_60_over_08_16_db": -46.626,
+                "peak_background_contrast_db": 29.381
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": 2.98,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -6.908,
+                "upper_32_60_over_08_16_db": -21.303,
+                "peak_background_contrast_db": 15.976
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -8.573,
+                "upper_32_60_over_08_16_db": -27.394,
+                "peak_background_contrast_db": 23.91
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -10.061,
+                "upper_32_60_over_08_16_db": -35.644,
+                "peak_background_contrast_db": 19.046
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -12.447,
+                "upper_32_60_over_08_16_db": -27.192,
+                "peak_background_contrast_db": 18.705
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -14.029,
+                "upper_32_60_over_08_16_db": -33.695,
+                "peak_background_contrast_db": 23.963
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -15.408,
+                "upper_32_60_over_08_16_db": -41.437,
+                "peak_background_contrast_db": 21.43
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": -6.54,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.477,
+                "upper_32_60_over_08_16_db": -13.766,
+                "peak_background_contrast_db": 10.944
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -12.182,
+                "upper_32_60_over_08_16_db": -22.545,
+                "peak_background_contrast_db": 21.46
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.832,
+                "upper_32_60_over_08_16_db": -33.911,
+                "peak_background_contrast_db": 21.855
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -12.628,
+                "upper_32_60_over_08_16_db": -15.162,
+                "peak_background_contrast_db": 11.826
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -12.716,
+                "upper_32_60_over_08_16_db": -24.424,
+                "peak_background_contrast_db": 20.903
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -15.384,
+                "upper_32_60_over_08_16_db": -35.873,
+                "peak_background_contrast_db": 21.138
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -4.06,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -8.221,
+                "upper_32_60_over_08_16_db": -20.738,
+                "peak_background_contrast_db": 16.931
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -10.954,
+                "upper_32_60_over_08_16_db": -31.625,
+                "peak_background_contrast_db": 22.105
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.071,
+                "upper_32_60_over_08_16_db": -42.891,
+                "peak_background_contrast_db": 22.094
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -6.29,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -8.321,
+                "upper_32_60_over_08_16_db": -20.491,
+                "peak_background_contrast_db": 16.694
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -12.032,
+                "upper_32_60_over_08_16_db": -29.686,
+                "peak_background_contrast_db": 24.725
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.425,
+                "upper_32_60_over_08_16_db": -41.23,
+                "peak_background_contrast_db": 25.054
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "arpeggio",
+      "km184_peak_time_s": 102.875,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": 0.67,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -12.153,
+                "upper_32_60_over_08_16_db": -21.685,
+                "peak_background_contrast_db": 18.903
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -13.186,
+                "upper_32_60_over_08_16_db": -26.191,
+                "peak_background_contrast_db": 31.667
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -12.81,
+                "upper_32_60_over_08_16_db": -31.545,
+                "peak_background_contrast_db": 33.926
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": -3.98,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -5.403,
+                "upper_32_60_over_08_16_db": -18.2,
+                "peak_background_contrast_db": 18.5
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -6.599,
+                "upper_32_60_over_08_16_db": -25.882,
+                "peak_background_contrast_db": 23.951
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -9.786,
+                "upper_32_60_over_08_16_db": -32.992,
+                "peak_background_contrast_db": 20.575
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.591,
+                "upper_32_60_over_08_16_db": -24.577,
+                "peak_background_contrast_db": 21.85
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -12.946,
+                "upper_32_60_over_08_16_db": -32.233,
+                "peak_background_contrast_db": 26.62
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -15.692,
+                "upper_32_60_over_08_16_db": -39.437,
+                "peak_background_contrast_db": 24.785
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": -1.21,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.607,
+                "upper_32_60_over_08_16_db": -13.218,
+                "peak_background_contrast_db": 16.216
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -14.062,
+                "upper_32_60_over_08_16_db": -17.185,
+                "peak_background_contrast_db": 26.822
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.775,
+                "upper_32_60_over_08_16_db": -20.281,
+                "peak_background_contrast_db": 26.025
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -13.605,
+                "upper_32_60_over_08_16_db": -15.655,
+                "peak_background_contrast_db": 16.213
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -16.269,
+                "upper_32_60_over_08_16_db": -19.908,
+                "peak_background_contrast_db": 27.094
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -16.173,
+                "upper_32_60_over_08_16_db": -23.532,
+                "peak_background_contrast_db": 26.095
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -3.29,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.151,
+                "upper_32_60_over_08_16_db": -24.072,
+                "peak_background_contrast_db": 20.732
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -12.292,
+                "upper_32_60_over_08_16_db": -28.256,
+                "peak_background_contrast_db": 27.718
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -11.991,
+                "upper_32_60_over_08_16_db": -32.346,
+                "peak_background_contrast_db": 26.085
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": 0.83,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -10.943,
+                "upper_32_60_over_08_16_db": -25.11,
+                "peak_background_contrast_db": 23.36
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.372,
+                "upper_32_60_over_08_16_db": -28.959,
+                "peak_background_contrast_db": 30.49
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -10.434,
+                "upper_32_60_over_08_16_db": -29.857,
+                "peak_background_contrast_db": 29.256
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "arpeggio",
+      "km184_peak_time_s": 103.45,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": 0.08,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -18.789,
+                "upper_32_60_over_08_16_db": -38.602,
+                "peak_background_contrast_db": 34.122
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -21.729,
+                "upper_32_60_over_08_16_db": -42.648,
+                "peak_background_contrast_db": 35.929
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -8.914,
+                "upper_32_60_over_08_16_db": -31.191,
+                "peak_background_contrast_db": 24.935
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": -7.69,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.385,
+                "upper_32_60_over_08_16_db": -30.791,
+                "peak_background_contrast_db": 28.977
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.033,
+                "upper_32_60_over_08_16_db": -40.4,
+                "peak_background_contrast_db": 28.808
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -5.997,
+                "upper_32_60_over_08_16_db": -23.79,
+                "peak_background_contrast_db": 20.739
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -14.382,
+                "upper_32_60_over_08_16_db": -36.989,
+                "peak_background_contrast_db": 33.787
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -16.52,
+                "upper_32_60_over_08_16_db": -46.629,
+                "peak_background_contrast_db": 32.516
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -11.552,
+                "upper_32_60_over_08_16_db": -30.102,
+                "peak_background_contrast_db": 24.1
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": -4.4,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -20.575,
+                "upper_32_60_over_08_16_db": -24.341,
+                "peak_background_contrast_db": 26.174
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -22.071,
+                "upper_32_60_over_08_16_db": -28.095,
+                "peak_background_contrast_db": 28.245
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -11.362,
+                "upper_32_60_over_08_16_db": -24.378,
+                "peak_background_contrast_db": 17.668
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -21.148,
+                "upper_32_60_over_08_16_db": -26.541,
+                "peak_background_contrast_db": 28.208
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -23.217,
+                "upper_32_60_over_08_16_db": -30.48,
+                "peak_background_contrast_db": 28.962
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -12.331,
+                "upper_32_60_over_08_16_db": -25.757,
+                "peak_background_contrast_db": 19.244
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -4.1,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -19.63,
+                "upper_32_60_over_08_16_db": -36.208,
+                "peak_background_contrast_db": 31.722
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -21.458,
+                "upper_32_60_over_08_16_db": -40.121,
+                "peak_background_contrast_db": 31.716
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -8.451,
+                "upper_32_60_over_08_16_db": -30.157,
+                "peak_background_contrast_db": 23.704
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -0.02,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -20.717,
+                "upper_32_60_over_08_16_db": -36.31,
+                "peak_background_contrast_db": 30.232
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -21.925,
+                "upper_32_60_over_08_16_db": -38.504,
+                "peak_background_contrast_db": 33.558
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -8.678,
+                "upper_32_60_over_08_16_db": -34.368,
+                "peak_background_contrast_db": 24.473
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "complex",
+      "km184_peak_time_s": 1704.46,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": -5.81,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.362,
+                "upper_32_60_over_08_16_db": -19.472,
+                "peak_background_contrast_db": 21.763
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.141,
+                "upper_32_60_over_08_16_db": -23.711,
+                "peak_background_contrast_db": 29.13
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -9.536,
+                "upper_32_60_over_08_16_db": -27.191,
+                "peak_background_contrast_db": 22.094
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": -7.62,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -13.445,
+                "upper_32_60_over_08_16_db": -23.431,
+                "peak_background_contrast_db": 22.255
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -14.42,
+                "upper_32_60_over_08_16_db": -29.392,
+                "peak_background_contrast_db": 24.371
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -9.253,
+                "upper_32_60_over_08_16_db": -32.522,
+                "peak_background_contrast_db": 22.42
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -20.631,
+                "upper_32_60_over_08_16_db": -30.066,
+                "peak_background_contrast_db": 22.419
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -21.157,
+                "upper_32_60_over_08_16_db": -35.958,
+                "peak_background_contrast_db": 27.38
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.39,
+                "upper_32_60_over_08_16_db": -38.569,
+                "peak_background_contrast_db": 24.643
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": 15.65,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -14.413,
+                "upper_32_60_over_08_16_db": -21.213,
+                "peak_background_contrast_db": 28.722
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -16.905,
+                "upper_32_60_over_08_16_db": -26.353,
+                "peak_background_contrast_db": 25.413
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.026,
+                "upper_32_60_over_08_16_db": -25.695,
+                "peak_background_contrast_db": 20.224
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -16.077,
+                "upper_32_60_over_08_16_db": -23.144,
+                "peak_background_contrast_db": 28.873
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -18.06,
+                "upper_32_60_over_08_16_db": -28.241,
+                "peak_background_contrast_db": 25.522
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.544,
+                "upper_32_60_over_08_16_db": -27.259,
+                "peak_background_contrast_db": 21.674
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -3.27,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -10.488,
+                "upper_32_60_over_08_16_db": -15.9,
+                "peak_background_contrast_db": 24.631
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -10.007,
+                "upper_32_60_over_08_16_db": -19.741,
+                "peak_background_contrast_db": 28.866
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -7.986,
+                "upper_32_60_over_08_16_db": -25.117,
+                "peak_background_contrast_db": 20.063
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -3.06,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.547,
+                "upper_32_60_over_08_16_db": -19.796,
+                "peak_background_contrast_db": 28.033
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.325,
+                "upper_32_60_over_08_16_db": -25.21,
+                "peak_background_contrast_db": 29.657
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -8.67,
+                "upper_32_60_over_08_16_db": -30.689,
+                "peak_background_contrast_db": 22.99
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "complex",
+      "km184_peak_time_s": 1706.445,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": -18.04,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -9.447,
+                "upper_32_60_over_08_16_db": -34.665,
+                "peak_background_contrast_db": 31.756
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.863,
+                "upper_32_60_over_08_16_db": -35.809,
+                "peak_background_contrast_db": 17.084
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.595,
+                "upper_32_60_over_08_16_db": -29.51,
+                "peak_background_contrast_db": 27.777
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": -20.5,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -10.443,
+                "upper_32_60_over_08_16_db": -32.273,
+                "peak_background_contrast_db": 27.957
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.755,
+                "upper_32_60_over_08_16_db": -35.346,
+                "peak_background_contrast_db": 19.127
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.37,
+                "upper_32_60_over_08_16_db": -30.474,
+                "peak_background_contrast_db": 23.02
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -17.003,
+                "upper_32_60_over_08_16_db": -38.324,
+                "peak_background_contrast_db": 30.776
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -18.255,
+                "upper_32_60_over_08_16_db": -41.027,
+                "peak_background_contrast_db": 21.356
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -20.899,
+                "upper_32_60_over_08_16_db": -36.982,
+                "peak_background_contrast_db": 25.733
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": -27.02,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.243,
+                "upper_32_60_over_08_16_db": -22.077,
+                "peak_background_contrast_db": 25.542
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -15.127,
+                "upper_32_60_over_08_16_db": -28.044,
+                "peak_background_contrast_db": 18.719
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -19.191,
+                "upper_32_60_over_08_16_db": -26.416,
+                "peak_background_contrast_db": 21.769
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -12.069,
+                "upper_32_60_over_08_16_db": -24.035,
+                "peak_background_contrast_db": 25.921
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -16.054,
+                "upper_32_60_over_08_16_db": -30.094,
+                "peak_background_contrast_db": 19.442
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -20.011,
+                "upper_32_60_over_08_16_db": -27.814,
+                "peak_background_contrast_db": 22.699
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -22.56,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -7.883,
+                "upper_32_60_over_08_16_db": -32.912,
+                "peak_background_contrast_db": 33.864
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.361,
+                "upper_32_60_over_08_16_db": -36.424,
+                "peak_background_contrast_db": 19.355
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.906,
+                "upper_32_60_over_08_16_db": -27.174,
+                "peak_background_contrast_db": 24.911
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -22.54,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -8.287,
+                "upper_32_60_over_08_16_db": -35.98,
+                "peak_background_contrast_db": 34.334
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -12.543,
+                "upper_32_60_over_08_16_db": -41.282,
+                "peak_background_contrast_db": 21.663
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -15.417,
+                "upper_32_60_over_08_16_db": -28.735,
+                "peak_background_contrast_db": 25.876
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "complex",
+      "km184_peak_time_s": 1706.84,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": 2.77,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -12.492,
+                "upper_32_60_over_08_16_db": -26.81,
+                "peak_background_contrast_db": 30.262
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -13.144,
+                "upper_32_60_over_08_16_db": -28.134,
+                "peak_background_contrast_db": 20.719
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -12.584,
+                "upper_32_60_over_08_16_db": -25.923,
+                "peak_background_contrast_db": 19.523
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": 7.52,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -6.034,
+                "upper_32_60_over_08_16_db": -27.27,
+                "peak_background_contrast_db": 28.131
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -7.886,
+                "upper_32_60_over_08_16_db": -30.459,
+                "peak_background_contrast_db": 19.333
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -9.7,
+                "upper_32_60_over_08_16_db": -28.11,
+                "peak_background_contrast_db": 19.084
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -14.56,
+                "upper_32_60_over_08_16_db": -34.293,
+                "peak_background_contrast_db": 29.043
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -16.22,
+                "upper_32_60_over_08_16_db": -37.455,
+                "peak_background_contrast_db": 20.863
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -17.594,
+                "upper_32_60_over_08_16_db": -35.025,
+                "peak_background_contrast_db": 22.153
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": 12.02,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -19.786,
+                "upper_32_60_over_08_16_db": -24.138,
+                "peak_background_contrast_db": 29.883
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -21.888,
+                "upper_32_60_over_08_16_db": -24.889,
+                "peak_background_contrast_db": 18.556
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -17.937,
+                "upper_32_60_over_08_16_db": -25.794,
+                "peak_background_contrast_db": 18.214
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -22.399,
+                "upper_32_60_over_08_16_db": -26.365,
+                "peak_background_contrast_db": 30.016
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -23.387,
+                "upper_32_60_over_08_16_db": -26.941,
+                "peak_background_contrast_db": 19.598
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -18.567,
+                "upper_32_60_over_08_16_db": -27.657,
+                "peak_background_contrast_db": 19.534
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": 3.02,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -14.604,
+                "upper_32_60_over_08_16_db": -20.774,
+                "peak_background_contrast_db": 29.367
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -15.609,
+                "upper_32_60_over_08_16_db": -21.675,
+                "peak_background_contrast_db": 18.342
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.489,
+                "upper_32_60_over_08_16_db": -22.958,
+                "peak_background_contrast_db": 19.543
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": 2.85,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -16.576,
+                "upper_32_60_over_08_16_db": -24.138,
+                "peak_background_contrast_db": 31.638
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -16.806,
+                "upper_32_60_over_08_16_db": -24.244,
+                "peak_background_contrast_db": 22.352
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -14.144,
+                "upper_32_60_over_08_16_db": -25.439,
+                "peak_background_contrast_db": 23.021
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "percussion",
+      "km184_peak_time_s": 1792.43,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": -0.46,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -14.885,
+                "upper_32_60_over_08_16_db": -21.034,
+                "peak_background_contrast_db": 14.458
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -10.746,
+                "upper_32_60_over_08_16_db": -17.476,
+                "peak_background_contrast_db": 11.322
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -20.806,
+                "upper_32_60_over_08_16_db": -29.518,
+                "peak_background_contrast_db": 13.101
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": -4.21,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 0.442,
+                "upper_32_60_over_08_16_db": -11.662,
+                "peak_background_contrast_db": 10.768
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -3.629,
+                "upper_32_60_over_08_16_db": -12.832,
+                "peak_background_contrast_db": 11.053
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -5.802,
+                "upper_32_60_over_08_16_db": -15.037,
+                "peak_background_contrast_db": 12.955
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -6.358,
+                "upper_32_60_over_08_16_db": -17.023,
+                "peak_background_contrast_db": 13.839
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -10.707,
+                "upper_32_60_over_08_16_db": -18.597,
+                "peak_background_contrast_db": 14.05
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -13.165,
+                "upper_32_60_over_08_16_db": -20.764,
+                "peak_background_contrast_db": 15.88
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": -0.54,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -10.918,
+                "upper_32_60_over_08_16_db": -14.188,
+                "peak_background_contrast_db": 9.442
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -8.023,
+                "upper_32_60_over_08_16_db": -9.782,
+                "peak_background_contrast_db": 8.469
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -9.909,
+                "upper_32_60_over_08_16_db": -12.496,
+                "peak_background_contrast_db": 7.138
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.947,
+                "upper_32_60_over_08_16_db": -15.653,
+                "peak_background_contrast_db": 11.749
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -9.568,
+                "upper_32_60_over_08_16_db": -11.205,
+                "peak_background_contrast_db": 9.841
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -10.633,
+                "upper_32_60_over_08_16_db": -13.597,
+                "peak_background_contrast_db": 8.818
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": -0.08,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -11.835,
+                "upper_32_60_over_08_16_db": -19.297,
+                "peak_background_contrast_db": 13.115
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.017,
+                "upper_32_60_over_08_16_db": -17.332,
+                "peak_background_contrast_db": 12.168
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -18.505,
+                "upper_32_60_over_08_16_db": -26.084,
+                "peak_background_contrast_db": 12.484
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": -0.17,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": -13.834,
+                "upper_32_60_over_08_16_db": -22.16,
+                "peak_background_contrast_db": 15.413
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": -11.983,
+                "upper_32_60_over_08_16_db": -20.302,
+                "peak_background_contrast_db": 13.067
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -20.926,
+                "upper_32_60_over_08_16_db": -28.857,
+                "peak_background_contrast_db": 11.374
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "group": "percussion",
+      "km184_peak_time_s": 1794.915,
+      "devices": {
+        "km184": {
+          "local_peak_offset_ms": 4.5,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 6.258,
+                "upper_32_60_over_08_16_db": 2.662,
+                "peak_background_contrast_db": 7.228
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 3.671,
+                "upper_32_60_over_08_16_db": 3.619,
+                "peak_background_contrast_db": 7.339
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -10.907,
+                "upper_32_60_over_08_16_db": -13.476,
+                "peak_background_contrast_db": 8.886
+              }
+            }
+          }
+        },
+        "iphone": {
+          "local_peak_offset_ms": 1.29,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 14.237,
+                "upper_32_60_over_08_16_db": 6.545,
+                "peak_background_contrast_db": 8.569
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 15.783,
+                "upper_32_60_over_08_16_db": 10.222,
+                "peak_background_contrast_db": 8.36
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": 3.618,
+                "upper_32_60_over_08_16_db": 0.2,
+                "peak_background_contrast_db": 6.494
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 5.633,
+                "upper_32_60_over_08_16_db": 0.702,
+                "peak_background_contrast_db": 7.193
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 7.189,
+                "upper_32_60_over_08_16_db": 4.32,
+                "peak_background_contrast_db": 6.832
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -4.156,
+                "upper_32_60_over_08_16_db": -5.276,
+                "peak_background_contrast_db": 7.412
+              }
+            }
+          }
+        },
+        "s21": {
+          "local_peak_offset_ms": 5.21,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 4.742,
+                "upper_32_60_over_08_16_db": 9.311,
+                "peak_background_contrast_db": 6.856
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 5.325,
+                "upper_32_60_over_08_16_db": 10.121,
+                "peak_background_contrast_db": 8.365
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -4.317,
+                "upper_32_60_over_08_16_db": -4.107,
+                "peak_background_contrast_db": 5.566
+              }
+            },
+            "fixed_eq": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 2.055,
+                "upper_32_60_over_08_16_db": 7.942,
+                "peak_background_contrast_db": 7.029
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 2.64,
+                "upper_32_60_over_08_16_db": 8.751,
+                "peak_background_contrast_db": 8.812
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -6.117,
+                "upper_32_60_over_08_16_db": -5.301,
+                "peak_background_contrast_db": 6.046
+              }
+            }
+          }
+        },
+        "h1": {
+          "local_peak_offset_ms": 4.75,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 6.267,
+                "upper_32_60_over_08_16_db": 3.372,
+                "peak_background_contrast_db": 6.289
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 2.804,
+                "upper_32_60_over_08_16_db": 3.681,
+                "peak_background_contrast_db": 6.531
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -8.36,
+                "upper_32_60_over_08_16_db": -12.002,
+                "peak_background_contrast_db": 8.273
+              }
+            }
+          }
+        },
+        "d10": {
+          "local_peak_offset_ms": 4.73,
+          "variants": {
+            "raw": {
+              "attack": {
+                "upper_16_32_over_08_16_db": 8.351,
+                "upper_32_60_over_08_16_db": 1.33,
+                "peak_background_contrast_db": 7.515
+              },
+              "body": {
+                "upper_16_32_over_08_16_db": 3.045,
+                "upper_32_60_over_08_16_db": 0.869,
+                "peak_background_contrast_db": 6.767
+              },
+              "tail": {
+                "upper_16_32_over_08_16_db": -9.479,
+                "upper_32_60_over_08_16_db": -13.733,
+                "peak_background_contrast_db": 8.282
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "arpeggio": {
+      "iphone": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 6.75,
+              "min_db": 2.932,
+              "max_db": 9.404,
+              "positive_events": 3,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 3.485,
+              "min_db": -0.383,
+              "max_db": 7.811,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.134,
+              "min_db": -5.145,
+              "max_db": -0.403,
+              "positive_events": 0,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 6.587,
+              "min_db": 3.034,
+              "max_db": 10.696,
+              "positive_events": 3,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.248,
+              "min_db": 0.309,
+              "max_db": 4.851,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -7.121,
+              "min_db": -7.716,
+              "max_db": 0.711,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 3.024,
+              "min_db": 2.917,
+              "max_db": 3.286,
+              "positive_events": 3,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 7.401,
+              "min_db": -1.447,
+              "max_db": 10.982,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -10.335,
+              "min_db": -13.351,
+              "max_db": -4.196,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.562,
+              "min_db": -2.607,
+              "max_db": 4.407,
+              "positive_events": 2,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.892,
+              "min_db": -6.272,
+              "max_db": 1.613,
+              "positive_events": 1,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.595,
+              "min_db": -0.335,
+              "max_db": 2.947,
+              "positive_events": 2,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.24,
+              "min_db": -2.422,
+              "max_db": 5.209,
+              "positive_events": 2,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -3.981,
+              "min_db": -6.042,
+              "max_db": -1.45,
+              "positive_events": 0,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -3.413,
+              "min_db": -5.047,
+              "max_db": 0.764,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -2.638,
+              "min_db": -2.882,
+              "max_db": -2.061,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.089,
+              "min_db": -7.892,
+              "max_db": 5.189,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -7.951,
+              "min_db": -9.141,
+              "max_db": -0.835,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        }
+      },
+      "s21": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -1.637,
+              "min_db": -1.786,
+              "max_db": 0.546,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 8.467,
+              "min_db": 7.154,
+              "max_db": 14.261,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -7.166,
+              "min_db": -7.948,
+              "max_db": -2.687,
+              "positive_events": 0,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.575,
+              "min_db": -0.876,
+              "max_db": -0.342,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 9.7,
+              "min_db": 9.006,
+              "max_db": 14.553,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -4.845,
+              "min_db": -7.684,
+              "max_db": -1.739,
+              "positive_events": 0,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -1.485,
+              "min_db": -2.448,
+              "max_db": -0.965,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 11.264,
+              "min_db": 6.813,
+              "max_db": 12.715,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -7.526,
+              "min_db": -7.901,
+              "max_db": -7.267,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -2.359,
+              "min_db": -2.788,
+              "max_db": -1.452,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 6.03,
+              "min_db": 5.758,
+              "max_db": 12.061,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -5.914,
+              "min_db": -6.284,
+              "max_db": -2.69,
+              "positive_events": 0,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -1.488,
+              "min_db": -3.083,
+              "max_db": -1.109,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 7.821,
+              "min_db": 6.283,
+              "max_db": 12.168,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -4.573,
+              "min_db": -6.967,
+              "max_db": -2.296,
+              "positive_events": 0,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -3.363,
+              "min_db": -3.417,
+              "max_db": -2.037,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 8.013,
+              "min_db": 5.434,
+              "max_db": 10.753,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -7.831,
+              "min_db": -8.243,
+              "max_db": -5.691,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        }
+      },
+      "h1": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.002,
+              "min_db": -0.841,
+              "max_db": 1.619,
+              "positive_events": 2,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.182,
+              "min_db": -2.387,
+              "max_db": 2.394,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.179,
+              "min_db": -2.4,
+              "max_db": 1.829,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.653,
+              "min_db": 0.271,
+              "max_db": 0.894,
+              "positive_events": 3,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.62,
+              "min_db": -2.065,
+              "max_db": 2.527,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -3.949,
+              "min_db": -4.213,
+              "max_db": -1.094,
+              "positive_events": 0,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.463,
+              "min_db": 0.276,
+              "max_db": 0.819,
+              "positive_events": 3,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.034,
+              "min_db": -0.801,
+              "max_db": 3.735,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -7.287,
+              "min_db": -7.841,
+              "max_db": -1.231,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        }
+      },
+      "d10": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.21,
+              "min_db": -1.928,
+              "max_db": 1.519,
+              "positive_events": 2,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.429,
+              "min_db": -3.425,
+              "max_db": 2.292,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.416,
+              "min_db": -3.89,
+              "max_db": 4.457,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.196,
+              "min_db": -0.425,
+              "max_db": 1.814,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.559,
+              "min_db": -2.768,
+              "max_db": 4.144,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.177,
+              "min_db": -2.371,
+              "max_db": 1.526,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.236,
+              "min_db": -0.078,
+              "max_db": 2.376,
+              "positive_events": 2,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.688,
+              "min_db": -3.177,
+              "max_db": 5.396,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -4.327,
+              "min_db": -4.67,
+              "max_db": -0.462,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        }
+      }
+    },
+    "complex": {
+      "iphone": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.996,
+              "min_db": -4.083,
+              "max_db": 6.458,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -0.46,
+              "min_db": -3.959,
+              "max_db": 2.392,
+              "positive_events": 1,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.131,
+              "min_db": -3.799,
+              "max_db": 0.492,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.108,
+              "min_db": -5.279,
+              "max_db": 5.258,
+              "positive_events": 2,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.325,
+              "min_db": -5.681,
+              "max_db": 0.463,
+              "positive_events": 1,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.386,
+              "min_db": -4.759,
+              "max_db": 2.043,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.225,
+              "min_db": 0.283,
+              "max_db": 2.884,
+              "positive_events": 3,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.187,
+              "min_db": -5.331,
+              "max_db": -0.964,
+              "positive_events": 0,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.439,
+              "min_db": -4.757,
+              "max_db": 0.326,
+              "positive_events": 1,
+              "n": 3
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -7.556,
+              "min_db": -11.269,
+              "max_db": -2.068,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -7.483,
+              "min_db": -10.594,
+              "max_db": -3.659,
+              "positive_events": 0,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.98,
+              "min_db": -1.219,
+              "max_db": 0.656,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -6.392,
+              "min_db": -12.016,
+              "max_db": -3.076,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -9.321,
+              "min_db": -12.247,
+              "max_db": -5.218,
+              "positive_events": 0,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.144,
+              "min_db": -1.75,
+              "max_db": 4.272,
+              "positive_events": 2,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -5.01,
+              "min_db": -6.304,
+              "max_db": -4.854,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -9.102,
+              "min_db": -11.378,
+              "max_db": -7.472,
+              "positive_events": 0,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 2.549,
+              "min_db": -2.044,
+              "max_db": 2.63,
+              "positive_events": 2,
+              "n": 3
+            }
+          }
+        }
+      },
+      "s21": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -5.051,
+              "min_db": -7.294,
+              "max_db": -1.796,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.672,
+              "min_db": -1.741,
+              "max_db": 12.588,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.379,
+              "min_db": -6.214,
+              "max_db": 6.959,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -7.764,
+              "min_db": -8.744,
+              "max_db": -3.264,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 3.245,
+              "min_db": -2.642,
+              "max_db": 7.765,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.163,
+              "min_db": -3.717,
+              "max_db": 1.635,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -4.596,
+              "min_db": -5.353,
+              "max_db": -4.49,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.496,
+              "min_db": 0.129,
+              "max_db": 3.094,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.87,
+              "min_db": -6.008,
+              "max_db": -1.309,
+              "positive_events": 0,
+              "n": 3
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -6.715,
+              "min_db": -9.907,
+              "max_db": -2.622,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.445,
+              "min_db": -3.672,
+              "max_db": 10.63,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.246,
+              "min_db": -5.835,
+              "max_db": 7.11,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -8.919,
+              "min_db": -10.243,
+              "max_db": -4.191,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.193,
+              "min_db": -4.53,
+              "max_db": 5.715,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.121,
+              "min_db": -3.608,
+              "max_db": 2.358,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -5.416,
+              "min_db": -5.983,
+              "max_db": -5.008,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -0.068,
+              "min_db": -1.734,
+              "max_db": 1.696,
+              "positive_events": 1,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.42,
+              "min_db": -5.078,
+              "max_db": 0.011,
+              "positive_events": 1,
+              "n": 3
+            }
+          }
+        }
+      },
+      "h1": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -1.126,
+              "min_db": -2.112,
+              "max_db": 1.564,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 3.572,
+              "min_db": 1.753,
+              "max_db": 6.036,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 2.108,
+              "min_db": -0.895,
+              "max_db": 2.868,
+              "positive_events": 2,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.866,
+              "min_db": -2.465,
+              "max_db": 0.502,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 3.97,
+              "min_db": -0.615,
+              "max_db": 6.459,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.264,
+              "min_db": -2.377,
+              "max_db": 2.271,
+              "positive_events": 1,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.311,
+              "min_db": -0.905,
+              "max_db": 1.55,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.336,
+              "min_db": 2.074,
+              "max_db": 2.965,
+              "positive_events": 3,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.031,
+              "min_db": -2.866,
+              "max_db": 0.02,
+              "positive_events": 1,
+              "n": 3
+            }
+          }
+        }
+      },
+      "d10": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.185,
+              "min_db": -4.084,
+              "max_db": 1.16,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -0.324,
+              "min_db": -1.315,
+              "max_db": 2.672,
+              "positive_events": 1,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 2.578,
+              "min_db": 1.376,
+              "max_db": 6.27,
+              "positive_events": 3,
+              "n": 3
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.68,
+              "min_db": -3.662,
+              "max_db": -0.184,
+              "positive_events": 0,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -1.499,
+              "min_db": -5.473,
+              "max_db": 3.89,
+              "positive_events": 1,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 1.633,
+              "min_db": 0.527,
+              "max_db": 4.579,
+              "positive_events": 3,
+              "n": 3
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.822,
+              "min_db": -1.56,
+              "max_db": 0.866,
+              "positive_events": 1,
+              "n": 3
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.484,
+              "min_db": -3.498,
+              "max_db": 0.775,
+              "positive_events": 2,
+              "n": 3
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.896,
+              "min_db": -1.901,
+              "max_db": 3.498,
+              "positive_events": 2,
+              "n": 3
+            }
+          }
+        }
+      }
+    },
+    "open_notes": {
+      "iphone": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 7.914,
+              "min_db": 6.477,
+              "max_db": 9.35,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.483,
+              "min_db": 0.994,
+              "max_db": 3.972,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.064,
+              "min_db": -2.222,
+              "max_db": 0.094,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 5.306,
+              "min_db": 2.637,
+              "max_db": 7.975,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.905,
+              "min_db": -1.3,
+              "max_db": 3.111,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -5.406,
+              "min_db": -6.317,
+              "max_db": -4.496,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 4.139,
+              "min_db": 2.84,
+              "max_db": 5.438,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.19,
+              "min_db": -3.979,
+              "max_db": -0.401,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.356,
+              "min_db": -3.565,
+              "max_db": -1.147,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.267,
+              "min_db": -1.735,
+              "max_db": 1.202,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -4.02,
+              "min_db": -5.665,
+              "max_db": -2.375,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.492,
+              "min_db": -2.661,
+              "max_db": -0.323,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -2.58,
+              "min_db": -5.245,
+              "max_db": 0.084,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -5.583,
+              "min_db": -7.822,
+              "max_db": -3.344,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -4.406,
+              "min_db": -5.114,
+              "max_db": -3.698,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -3.423,
+              "min_db": -5.429,
+              "max_db": -1.418,
+              "positive_events": 0,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -8.888,
+              "min_db": -10.443,
+              "max_db": -7.332,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.119,
+              "min_db": -0.213,
+              "max_db": 0.451,
+              "positive_events": 1,
+              "n": 2
+            }
+          }
+        }
+      },
+      "s21": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.342,
+              "min_db": -2.338,
+              "max_db": 1.654,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.545,
+              "min_db": 1.159,
+              "max_db": 3.932,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 3.801,
+              "min_db": 3.377,
+              "max_db": 4.226,
+              "positive_events": 2,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.121,
+              "min_db": -1.529,
+              "max_db": 1.772,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.877,
+              "min_db": 0.505,
+              "max_db": 5.248,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.342,
+              "min_db": -2.175,
+              "max_db": -0.509,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.778,
+              "min_db": -0.217,
+              "max_db": 1.772,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.71,
+              "min_db": -1.345,
+              "max_db": 6.764,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.855,
+              "min_db": -1.232,
+              "max_db": -0.478,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -1.719,
+              "min_db": -3.969,
+              "max_db": 0.531,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.996,
+              "min_db": -0.503,
+              "max_db": 2.495,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 3.348,
+              "min_db": 2.654,
+              "max_db": 4.043,
+              "positive_events": 2,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.894,
+              "min_db": -2.531,
+              "max_db": 0.743,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.353,
+              "min_db": -1.135,
+              "max_db": 3.842,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.47,
+              "min_db": -1.44,
+              "max_db": 0.501,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.123,
+              "min_db": -0.705,
+              "max_db": 0.952,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.152,
+              "min_db": -2.817,
+              "max_db": 5.122,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.485,
+              "min_db": -1.075,
+              "max_db": 0.106,
+              "positive_events": 1,
+              "n": 2
+            }
+          }
+        }
+      },
+      "h1": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.219,
+              "min_db": -0.219,
+              "max_db": 0.656,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -0.616,
+              "min_db": -1.387,
+              "max_db": 0.155,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.447,
+              "min_db": -0.895,
+              "max_db": 0.0,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.403,
+              "min_db": -1.187,
+              "max_db": 0.381,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -1.186,
+              "min_db": -2.271,
+              "max_db": -0.1,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -4.15,
+              "min_db": -5.387,
+              "max_db": -2.913,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.237,
+              "min_db": -0.749,
+              "max_db": 0.274,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -1.871,
+              "min_db": -2.659,
+              "max_db": -1.083,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.146,
+              "min_db": -1.314,
+              "max_db": -0.979,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        }
+      },
+      "d10": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 3.341,
+              "min_db": -0.598,
+              "max_db": 7.279,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.09,
+              "min_db": -5.865,
+              "max_db": 1.685,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.045,
+              "min_db": -1.399,
+              "max_db": 1.309,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 2.528,
+              "min_db": -0.617,
+              "max_db": 5.673,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.884,
+              "min_db": -7.027,
+              "max_db": 1.259,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.623,
+              "min_db": -5.225,
+              "max_db": -0.02,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.943,
+              "min_db": 0.513,
+              "max_db": 3.372,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -4.135,
+              "min_db": -7.677,
+              "max_db": -0.594,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.31,
+              "min_db": -0.967,
+              "max_db": 0.346,
+              "positive_events": 1,
+              "n": 2
+            }
+          }
+        }
+      }
+    },
+    "percussion": {
+      "iphone": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 11.653,
+              "min_db": 7.979,
+              "max_db": 15.327,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 6.627,
+              "min_db": 3.883,
+              "max_db": 9.372,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.174,
+              "min_db": -3.69,
+              "max_db": 1.341,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 9.614,
+              "min_db": 7.117,
+              "max_db": 12.112,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 5.623,
+              "min_db": 4.644,
+              "max_db": 6.603,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.376,
+              "min_db": -0.269,
+              "max_db": 1.021,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 14.765,
+              "min_db": 14.525,
+              "max_db": 15.004,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 14.079,
+              "min_db": 13.676,
+              "max_db": 14.481,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.269,
+              "min_db": -2.392,
+              "max_db": -0.146,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 3.951,
+              "min_db": -0.625,
+              "max_db": 8.527,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.025,
+              "min_db": -1.96,
+              "max_db": 4.011,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.327,
+              "min_db": -0.619,
+              "max_db": -0.035,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.778,
+              "min_db": 0.039,
+              "max_db": 3.518,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -0.21,
+              "min_db": -1.121,
+              "max_db": 0.701,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 1.111,
+              "min_db": -0.507,
+              "max_db": 2.728,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 7.196,
+              "min_db": 6.751,
+              "max_db": 7.641,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 8.477,
+              "min_db": 8.2,
+              "max_db": 8.754,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.653,
+              "min_db": -1.474,
+              "max_db": 2.779,
+              "positive_events": 1,
+              "n": 2
+            }
+          }
+        }
+      },
+      "s21": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.226,
+              "min_db": -1.516,
+              "max_db": 3.967,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 6.747,
+              "min_db": 6.649,
+              "max_db": 6.846,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -2.694,
+              "min_db": -5.016,
+              "max_db": -0.372,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 2.189,
+              "min_db": 1.654,
+              "max_db": 2.723,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 7.098,
+              "min_db": 6.502,
+              "max_db": 7.694,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.913,
+              "min_db": -2.853,
+              "max_db": 1.026,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 8.744,
+              "min_db": 6.59,
+              "max_db": 10.897,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 13.195,
+              "min_db": 9.369,
+              "max_db": 17.022,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -4.642,
+              "min_db": -5.963,
+              "max_db": -3.32,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        },
+        "fixed_eq": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.632,
+              "min_db": -4.203,
+              "max_db": 2.938,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 5.33,
+              "min_db": 5.28,
+              "max_db": 5.381,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.454,
+              "min_db": -2.709,
+              "max_db": -0.199,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.074,
+              "min_db": -1.031,
+              "max_db": 1.178,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 5.701,
+              "min_db": 5.132,
+              "max_db": 6.271,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.004,
+              "min_db": -1.481,
+              "max_db": 1.473,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 7.482,
+              "min_db": 4.79,
+              "max_db": 10.173,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 12.048,
+              "min_db": 8.175,
+              "max_db": 15.921,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -3.562,
+              "min_db": -4.283,
+              "max_db": -2.84,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        }
+      },
+      "h1": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.529,
+              "min_db": 0.009,
+              "max_db": 3.05,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 1.223,
+              "min_db": 0.71,
+              "max_db": 1.737,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.141,
+              "min_db": -1.343,
+              "max_db": -0.939,
+              "positive_events": 0,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.569,
+              "min_db": -0.867,
+              "max_db": -0.271,
+              "positive_events": 0,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.103,
+              "min_db": 0.062,
+              "max_db": 0.144,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.019,
+              "min_db": -0.808,
+              "max_db": 0.846,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 2.424,
+              "min_db": 2.301,
+              "max_db": 2.547,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 2.454,
+              "min_db": 1.474,
+              "max_db": 3.434,
+              "positive_events": 2,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -0.615,
+              "min_db": -0.617,
+              "max_db": -0.613,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        }
+      },
+      "d10": {
+        "raw": {
+          "attack": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 1.572,
+              "min_db": 1.051,
+              "max_db": 2.093,
+              "positive_events": 2,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -1.229,
+              "min_db": -1.332,
+              "max_db": -1.126,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.621,
+              "min_db": 0.287,
+              "max_db": 0.955,
+              "positive_events": 2,
+              "n": 2
+            }
+          },
+          "body": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": -0.931,
+              "min_db": -1.237,
+              "max_db": -0.626,
+              "positive_events": 0,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": -2.788,
+              "min_db": -2.826,
+              "max_db": -2.75,
+              "positive_events": 0,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": 0.587,
+              "min_db": -0.572,
+              "max_db": 1.745,
+              "positive_events": 1,
+              "n": 2
+            }
+          },
+          "tail": {
+            "upper_16_32_over_08_16_db": {
+              "median_db": 0.654,
+              "min_db": -0.12,
+              "max_db": 1.428,
+              "positive_events": 1,
+              "n": 2
+            },
+            "upper_32_60_over_08_16_db": {
+              "median_db": 0.202,
+              "min_db": -0.257,
+              "max_db": 0.661,
+              "positive_events": 1,
+              "n": 2
+            },
+            "peak_background_contrast_db": {
+              "median_db": -1.165,
+              "min_db": -1.727,
+              "max_db": -0.604,
+              "positive_events": 0,
+              "n": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}
