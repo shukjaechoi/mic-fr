@@ -75,7 +75,7 @@ def peakcontrast(waves,raw,d):
   vals={key:float(10*np.log10(np.mean(v[core])/np.mean(v[flank]))) for key,v in ps.items()}
   out.append({'frequency_hz':float(hz),'contrast_db':vals,'baseline_difference_db':vals['baseline']-vals['km184']})
  out=sorted(out,key=lambda x:abs(x['baseline_difference_db']),reverse=True)[:8]
- return {'definition':'KM184-selected local spectral peaks, core ±20Hz versus flanks45–100Hz. Not automatically verified harmonics. Both raw core and flank SNR>=10dB.','peaks':out,'contrast_mae_db':{key:float(np.mean([abs(r['contrast_db'][key]-r['contrast_db']['km184']) for r in out])) if out else None for key in ('baseline','static','temporal')}}
+ return {'definition':'KM184-selected local spectral peaks, core ±20Hz versus flanks45–100Hz. Not automatically verified harmonics. Both raw core and flank SNR>=10dB. At most8 peaks with largest baseline contrast differences; descriptive failure sample, not average of all components.','peaks':out,'contrast_mae_db':{key:float(np.mean([abs(r['contrast_db'][key]-r['contrast_db']['km184']) for r in out])) if out else None for key in ('baseline','static','temporal')}}
 freqgrid=np.geomspace(12000,80,320)
 def image_spec(x):
  f,t,z=signal.stft(x,FS,nperseg=4096,noverlap=3584,boundary=None);fi,ti=np.meshgrid(freqgrid/(f[1]-f[0]),(np.linspace(0,5,470)-t[0])/(t[1]-t[0]),indexing='ij');return ndimage.map_coordinates(20*np.log10(np.maximum(abs(z),1e-9)),[fi,ti],order=1,mode='nearest')
